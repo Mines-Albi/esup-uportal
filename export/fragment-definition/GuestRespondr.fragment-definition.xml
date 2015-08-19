@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><fragment-definition xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-fragment-definition_v3-1.crn">
+  <dlm:fragment xmlns:dlm="http://org.jasig.portal.layout.dlm.config" name="GuestRespondr" ownerID="guest.respondr-lo" precedence="80.0">
+    <dlm:audience evaluatorFactory="org.jasig.portal.layout.dlm.providers.GroupMembershipEvaluatorFactory">
+      <paren mode="AND">
+        <paren mode="NOT">
+          <attribute mode="deepMemberOf" name="Authenticated Users"/>
+        </paren>
+        <attribute mode="deepMemberOf" name="Respondr Theme Users"/>
+      </paren>
+    </dlm:audience>
+  </dlm:fragment>
+</fragment-definition>

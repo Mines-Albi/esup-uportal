@@ -314,7 +314,9 @@
                 <entry key="supannaffectation">             <value>supannaffectation</value></entry>
                 <entry key="objectclass">                   <value>objectclass</value></entry>
                 <entry key="supannorganisme">               <value>supannorganisme</value></entry>
-            </map>
+            	<entry key="statut">                        <value>statut</value></entry>
+		 <entry key="ou">               <value>organizationalUnit</value></entry>
+		</map>
         </property>
     </bean>
      

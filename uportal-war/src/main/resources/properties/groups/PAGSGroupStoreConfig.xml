@@ -67,7 +67,11 @@
       <member-key>desktop_device_access</member-key>
       <member-key>mobile_device_access</member-key>
       <member-key>respondr_theme_users</member-key>
-    </members>
+      <member-key>employee</member-key>
+      <member-key>vacataire</member-key> 
+      <member-key>student</member-key>
+      <member-key>people</member-key>
+     </members>
   </group>
 
 
@@ -150,6 +154,70 @@
       </test-group>
     </selection-test>
   </group>
+
+
+<group>
+<group-key>employee</group-key>
+    <group-name>employee</group-name>
+    <group-description>employee</group-description>
+    <selection-test>
+      <test-group>
+        <test>
+          <attribute-name>eduPersonAffiliation</attribute-name>
+          <tester-class>org.jasig.portal.groups.pags.testers.StringEqualsTester</tester-class>
+          <test-value>employee</test-value>
+        </test>
+      </test-group>
+    </selection-test>
+</group>
+
+
+<group>
+<group-key>student</group-key>
+    <group-name>student</group-name>
+    <group-description>student</group-description>
+    <selection-test>
+      <test-group>
+        <test>
+          <attribute-name>eduPersonAffiliation</attribute-name>
+          <tester-class>org.jasig.portal.groups.pags.testers.StringEqualsTester</tester-class>
+          <test-value>student</test-value>
+        </test>
+      </test-group>
+    </selection-test>
+</group>
+
+
+<group>
+    <group-key>people</group-key>
+    <group-name>people </group-name>
+    <group-description>All mines-albi user</group-description>
+    <selection-test>
+      <test-group>
+        <test>
+          <attribute-name>eduPersonAffiliation</attribute-name>
+          <tester-class>org.jasig.portal.groups.pags.testers.StringEqualsIgnoreCaseTester</tester-class>
+          <test-value>member</test-value>
+        </test>
+      </test-group>
+    </selection-test>
+  </group>
+
+  <group>
+    <group-key>vacataire</group-key>
+    <group-name>vacataire</group-name>
+    <group-description>Vacataire</group-description>
+    <selection-test>
+      <test-group>
+        <test>
+          <attribute-name>statut</attribute-name>
+          <tester-class>org.jasig.portal.groups.pags.testers.StringEqualsIgnoreCaseTester</tester-class>
+          <test-value>vacataire</test-value>
+        </test>
+      </test-group>
+    </selection-test>
+  </group>
+
 
 <!--==================== Other Examples ====================-->
 
