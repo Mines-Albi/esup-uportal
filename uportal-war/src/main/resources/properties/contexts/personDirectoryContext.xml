@@ -313,6 +313,10 @@
                 <entry key="eduPersonAffiliation">          <value>eduPersonAffiliation</value></entry>
                 <entry key="supannaffectation">             <value>supannaffectation</value></entry>
                 <entry key="objectclass">                   <value>objectclass</value></entry>
+		<!-- modifs MINES ALBI -->
+                <entry key="statut">                        <value>statut</value></entry>
+                <entry key="ou">             		   <value>organizationalUnit</value></entry>
+		<!-- / modifs MINES ALBI -->
                 <entry key="supannorganisme">               <value>supannorganisme</value></entry>
             </map>
         </property>

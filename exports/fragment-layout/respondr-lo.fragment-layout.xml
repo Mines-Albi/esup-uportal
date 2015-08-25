@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="respondr-lo">
+  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder ID="s2" hidden="false" immutable="true" name="Page Top folder" type="page-top" unremovable="true">
+      <channel fname="dynamic-respondr-skin" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+    </folder>
+    <folder ID="s4" hidden="true" immutable="true" name="Page Top folder" type="page-top" unremovable="true">
+      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n5"/>
+    </folder>
+    <folder ID="s6" hidden="true" immutable="true" name="Customize folder" type="customize" unremovable="true">
+      <channel fname="personalization-gallery" unremovable="false" hidden="false" immutable="false" ID="n7"/>
+    </folder>
+    <folder ID="s8" hidden="false" immutable="true" name="Header Left folder" type="header-left" unremovable="true">
+      <channel fname="portal-logo" unremovable="false" hidden="false" immutable="false" ID="n9"/>
+    </folder>
+  </folder>
+</layout>

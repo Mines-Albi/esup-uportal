@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
+    <title>Legal Footer</title>
+    <name>Legal Footer</name>
+    <fname>legal-footer</fname>
+    <desc>Legal links for uPortal</desc>
+    <type>Portlet</type>
+    <timeout>5000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/SimpleContentPortlet</ns2:webAppName>
+        <ns2:portletName>cms</ns2:portletName>
+    </portlet-descriptor>
+    <group>Everyone</group>
+    <parameter>
+        <name>configurable</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <portlet-preference>
+        <name>content</name>
+        <readOnly>false</readOnly>
+        <value>
+            &lt;div class=&quot;container-fluid legal-footer&quot;&gt;
+                &lt;div&gt;
+                    &lt;a href=&quot;http://www.apereo.org/uportal&quot; target=&quot;_blank&quot;&gt;Site con�u via uPortal&lt;/a&gt;, un projet open-source de &lt;a href=&quot;http://www.apereo.org&quot; title=&quot;Apereo.org - Serving the Academic Mission&quot;&gt;Apereo&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;a href=&quot;http://www.apereo.org/&quot; target=&quot;_blank&quot;&gt;Apereo.org&lt;/a&gt; |
+                    &lt;a href=&quot;http://www.apereo.org/uportal&quot; target=&quot;_blank&quot;&gt;uPortal&lt;/a&gt; |
+                    &lt;a href=&quot;https://www.esup-portail.org/&quot; target=&quot;_blank&quot;&gt;EsupPortail&lt;/a&gt; |
+                    &lt;a href=&quot;http://wiki.jasig.org/display/UPM40/Accessibility&quot; target=&quot;_blank&quot;&gt;Accessibilit�&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;a href=&quot;http://www.apereo.org/uportal/about/license&quot; title=&quot;uPortal&quot; target=&quot;_blank&quot;&gt;uPortal&lt;/a&gt;
+                    est sous license
+                    &lt;a href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot; title=&quot;Apache License, Version 2.0&quot; target=&quot;_blank&quot;&gt;Apache License, Version 2.0&lt;/a&gt;
+                    approuv�e par l'Open Source Initiative (OSI), une license 
+                    &lt;a href=&quot;http://www.opensource.org/docs/osd&quot; title=&quot;OSI-certified&quot; target=&quot;_blank&quot;&gt;certifi�e OSI&lt;/a&gt;
+                    (&quot;ouverte&quot;) et
+                    &lt;a href=&quot;http://www.gnu.org/licenses/license-list.html&quot; title=&quot;Gnu/FSF-recognized&quot; target=&quot;_blank&quot;&gt;Gnu/FSF-recognized&lt;/a&gt;
+                    (&quot;libre&quot;)
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </value>
+    </portlet-preference>
+</portlet-definition>
