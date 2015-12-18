@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="eboneche">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+  </folder>
+  <preferences>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder[2]/channel[2]" channel="calendar" name="showDatePicker">
+      <value>true</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="protocol">
+      <value>imap</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="password">
+      <value>hrMb3m79VS7vuUoEyuAL4bM4ctOZIYXq</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="username">
+      <value>DPgO0qMl6lfAHCOlz21b3crfNbeynqWSCRx5HLMI5mQ=</value>
+    </entry>
+  </preferences>
+</layout>

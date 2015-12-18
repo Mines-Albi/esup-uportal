@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="pfargere">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false"/>
+    </folder>
+  </folder>
+  <preferences>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="password">
+      <value>4oLAjHlvhV4+vPRXtEY/yqsnq0x4Stfp</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="username">
+      <value>t9pt7Wqpi1K+tYbaTYo3CXmw0D2aldTozUj4WocdZbMQ4UcK8D4Y6A==</value>
+    </entry>
+  </preferences>
+</layout>

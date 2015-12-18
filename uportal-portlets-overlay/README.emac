@@ -1,0 +1,6 @@
+Pour ajouter un portlet:
+
+cd aWebProxyPortlet
+mvn clean install package
+ant deployPortletApp -DportletApp=/home/esup/esup-uportal/uportal-portlets-overlay/WebProxyPortlet/target/esup-twitter.war
+ant deploy ear

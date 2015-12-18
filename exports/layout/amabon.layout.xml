@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="amabon">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+    <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+      <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[4]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[5]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[6]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="outils-student-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="amabon:/layout/folder/folder" type="dlm:position" unremovable="false"/>
+    </dlm:positionSet>
+  </folder>
+</layout>

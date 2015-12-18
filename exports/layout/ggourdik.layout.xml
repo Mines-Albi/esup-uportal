@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="ggourdik">
+  <preferences>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder[2]/channel[2]" channel="calendar" name="showDatePicker">
+      <value>true</value>
+    </entry>
+  </preferences>
+</layout>

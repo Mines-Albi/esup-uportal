@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="mcoulama">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder dlm:origin="welcome-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="Accueil" type="regular" unremovable="false">
+      <folder dlm:origin="welcome-lo:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="mon_planning" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false"/>
+        <channel fname="agenda_intranet" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false"/>
+        <channel fname="calendar" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false"/>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+    </folder>
+    <folder hidden="false" immutable="false" name="Blabla" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+        <channel fname="user-locales-selector" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="announcements" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="calendar" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="campus-news" unremovable="false" hidden="false" immutable="false"/>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+    <folder dlm:origin="eleve:/layout/folder/folder[5]" hidden="false" immutable="false" name="Mon dossier" type="regular" unremovable="false">
+      <folder dlm:origin="eleve:/layout/folder/folder[5]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="user-locales-selector" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="reset-my-layout" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="google-docs" unremovable="false" hidden="false" immutable="false"/>
+        <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+          <dlm:position hidden="false" immutable="false" name="mcoulama:/layout/folder/folder[3]/folder/channel[1]" type="dlm:position" unremovable="false" fname="user-locales-selector"/>
+          <dlm:position hidden="false" immutable="false" name="mcoulama:/layout/folder/folder[3]/folder/channel[2]" type="dlm:position" unremovable="false" fname="reset-my-layout"/>
+          <dlm:position hidden="false" immutable="false" name="mcoulama:/layout/folder/folder[3]/folder/channel[3]" type="dlm:position" unremovable="false" fname="google-docs"/>
+          <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[5]/folder/channel" type="dlm:position" unremovable="false" fname="mes_tuteurs"/>
+          <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[5]/folder/channel[2]" type="dlm:position" unremovable="false" fname="mes_referents"/>
+          <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[5]/folder/channel[3]" type="dlm:position" unremovable="false" fname="mes_stages"/>
+        </dlm:positionSet>
+      </folder>
+    </folder>
+    <folder dlm:origin="eleve:/layout/folder/folder[4]" hidden="false" immutable="false" name="Mes resultats" type="regular" unremovable="false">
+      <folder dlm:origin="eleve:/layout/folder/folder[4]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="portletmarketplace" unremovable="false" hidden="false" immutable="false"/>
+      </folder>
+    </folder>
+    <folder dlm:origin="outils-student-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="boite à outils" type="regular" unremovable="false">
+      <folder dlm:origin="outils-student-lo:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="reservation_salle" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false"/>
+        <channel fname="trombinoscope" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false"/>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+    </folder>
+  </folder>
+  <dlm:deleteSet hidden="false" immutable="false" name="" type="dlm:deleteSet" unremovable="false">
+    <dlm:delete hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]" type="dlm:delete" unremovable="false"/>
+    <dlm:delete hidden="false" immutable="false" name="outils-student-lo:/layout/folder/folder[3]/folder[2]" type="dlm:delete" unremovable="false"/>
+  </dlm:deleteSet>
+</layout>

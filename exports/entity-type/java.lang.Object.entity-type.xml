@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><entity-type script="classpath://org/jasig/portal/io/import-entity-type_v3-2.crn">
+  <name>java.lang.Object</name>
+  <desc-name>Generic</desc-name>
+</entity-type>

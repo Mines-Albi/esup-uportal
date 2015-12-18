@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="ent-lo">
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="staff-lo">
   <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
     <folder ID="s2" hidden="true" immutable="true" name="Page Top folder" type="page-top" unremovable="true">
       <channel fname="dynamic-respondr-skin" unremovable="false" hidden="false" immutable="false" ID="n3"/>
@@ -7,24 +7,25 @@
     <folder ID="s5" hidden="true" immutable="true" name="Customize folder" type="customize" unremovable="true">
       <channel fname="personalization-gallery" unremovable="false" hidden="false" immutable="false" ID="n6"/>
     </folder>
-    <folder ID="s7" hidden="false" immutable="false" name="Divertissement" type="regular" unremovable="false">
+    <folder ID="s7" hidden="false" immutable="false" name="Outils du personnel" type="regular" unremovable="false">
       <structure-attribute>
         <name>externalId</name>
-        <value>entertainment</value>
+        <value>main-staff-tab</value>
       </structure-attribute>
-      <folder ID="s8" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+      <folder ID="s8" hidden="false" immutable="false" name="Column 1" type="regular" unremovable="false">
         <structure-attribute>
           <name>width</name>
           <value>60%</value>
         </structure-attribute>
-        <channel fname="xkcd" unremovable="false" hidden="false" immutable="false" ID="n9"/>
+        <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n9"/>
       </folder>
-      <folder ID="s10" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+      <folder ID="s10" hidden="false" immutable="false" name="Column 2" type="regular" unremovable="false">
         <structure-attribute>
           <name>width</name>
           <value>40%</value>
         </structure-attribute>
-        <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n11"/>
+        <channel fname="notification" unremovable="false" hidden="false" immutable="false" ID="n11"/>
+        <channel fname="whos-online" unremovable="false" hidden="false" immutable="false" ID="n12"/>
       </folder>
     </folder>
   </folder>

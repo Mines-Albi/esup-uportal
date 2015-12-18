@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="munoz">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder dlm:origin="welcome-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="Accueil" type="regular" unremovable="false">
+      <folder dlm:origin="welcome-lo:/layout/folder/folder[3]/folder[2]" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="annuaire" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="discipline" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="mes_referes" unremovable="false" hidden="false" immutable="false"/>
+        <channel fname="announcements" unremovable="false" hidden="false" immutable="false"/>
+        <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+          <dlm:position hidden="false" immutable="false" name="munoz:/layout/folder/folder[1]/folder/channel[1]" type="dlm:position" unremovable="false" fname="annuaire"/>
+          <dlm:position hidden="false" immutable="false" name="munoz:/layout/folder/folder[1]/folder/channel[2]" type="dlm:position" unremovable="false" fname="discipline"/>
+          <dlm:position hidden="false" immutable="false" name="munoz:/layout/folder/folder[1]/folder/channel[3]" type="dlm:position" unremovable="false" fname="mes_referes"/>
+          <dlm:position hidden="false" immutable="false" name="munoz:/layout/folder/folder[1]/folder/channel[4]" type="dlm:position" unremovable="false" fname="announcements"/>
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]/channel" type="dlm:position" unremovable="false" fname="mon_planning"/>
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]/channel[2]" type="dlm:position" unremovable="false" fname="calendar"/>
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]/channel[3]" type="dlm:position" unremovable="false" fname="agenda_intranet"/>
+        </dlm:positionSet>
+      </folder>
+    </folder>
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+    <folder dlm:origin="outils-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="boite à outils" type="regular" unremovable="false">
+      <folder dlm:origin="outils-lo:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <channel fname="discipline" unremovable="false" hidden="false" immutable="false"/>
+        <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+          <dlm:position hidden="false" immutable="false" name="munoz:/layout/folder/folder[3]/folder/channel" type="dlm:position" unremovable="false" fname="discipline"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder/channel" type="dlm:position" unremovable="false" fname="annuaire"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder/channel[2]" type="dlm:position" unremovable="false" fname="taille_webmail"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder/channel[3]" type="dlm:position" unremovable="false" fname="reservation_voiture"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder/channel[4]" type="dlm:position" unremovable="false" fname="webcam_cantine"/>
+        </dlm:positionSet>
+      </folder>
+    </folder>
+    <folder dlm:origin="favorite-lo:/layout/folder/folder" hidden="false" immutable="false" name="_favorite" type="favorites" unremovable="false">
+      <folder dlm:origin="favorite-lo:/layout/folder/folder/folder" hidden="false" immutable="false" name="Column" type="favorite_column" unremovable="false">
+        <channel fname="discipline" unremovable="false" hidden="false" immutable="false"/>
+      </folder>
+    </folder>
+  </folder>
+  <preferences>
+    <entry entity="news_favorite_collection-lo:/layout/folder/folder/folder/channel[2]" channel="campus-news" name="activeFeed">
+      <value/>
+    </entry>
+  </preferences>
+</layout>

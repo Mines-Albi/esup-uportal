@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><fragment-definition xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-fragment-definition_v3-1.crn">
-  <dlm:fragment xmlns:dlm="http://org.jasig.portal.layout.dlm.config" name="permanents" ownerID="permanents" precedence="80.0">
+  <dlm:fragment xmlns:dlm="http://org.jasig.portal.layout.dlm.config" name="vacataires" ownerID="vacataires" precedence="80.0">
     <dlm:audience evaluatorFactory="org.jasig.portal.layout.dlm.providers.GroupMembershipEvaluatorFactory">
       <paren mode="OR">
-        <attribute mode="deepMemberOf" name="Permanents"/>
+        <attribute mode="deepMemberOf" name="Vacataires"/>
       </paren>
     </dlm:audience>
   </dlm:fragment>

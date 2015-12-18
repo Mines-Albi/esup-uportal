@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="qantoine">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder dlm:origin="welcome-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="Accueil" type="regular" unremovable="false">
+      <folder dlm:origin="welcome-lo:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder/channel" type="dlm:position" unremovable="false" fname="webmail"/>
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder/channel[2]" type="dlm:position" unremovable="false" fname="twitter"/>
+          <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]/channel[3]" type="dlm:position" unremovable="false" fname="agenda_intranet"/>
+        </dlm:positionSet>
+      </folder>
+      <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+        <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]/folder[2]" type="dlm:position" unremovable="false"/>
+      </dlm:positionSet>
+    </folder>
+    <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+      <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[4]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[5]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="eleve:/layout/folder/folder[6]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="outils-student-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="s19" type="dlm:position" unremovable="false"/>
+    </dlm:positionSet>
+  </folder>
+  <preferences>
+    <entry entity="all-lo:/layout/folder/folder[4]/channel" channel="background-preference" name="defaultSelectedBackgroundImage">
+      <value>/uPortal/media/skins/common/backgroundImages/galaxy.jpg</value>
+    </entry>
+  </preferences>
+</layout>

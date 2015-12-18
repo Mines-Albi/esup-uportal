@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><group script="classpath://org/jasig/portal/io/import-group_membership_v3-2.crn">
+  <name>Portal System</name>
+  <entity-type>org.jasig.portal.security.IPerson</entity-type>
+  <creator>system</creator>
+  <description>Comptes systèmes du portail</description>
+  <children>
+    <group>Fragment Owners</group>
+    <group>Portal Administrators</group>
+    <group>Portal Developers</group>
+  </children>
+</group>

@@ -17,14 +17,14 @@
           <name>width</name>
           <value>60%</value>
         </structure-attribute>
-      	<channel fname="twitter" dlm:deleteAllowed="false" dlm:editAllowed="false" unremovable="false" hidden="false" immutable="false" ID="n14" />
-       </folder>
+        <channel fname="twitter" unremovable="false" hidden="false" immutable="false" ID="n14" dlm:deleteAllowed="false"/>
+      </folder>
       <folder ID="s11" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
         <structure-attribute>
           <name>width</name>
           <value>40%</value>
         </structure-attribute>
-        <channel fname="portal-activity" unremovable="false"  immutable="false" dlm:deleteAllowed="false" hidden="false" dlm:editAllowed="false" ID="n13"/>
+        <channel fname="portal-activity" unremovable="false" hidden="false" immutable="false" ID="n13" dlm:deleteAllowed="false"/>
       </folder>
     </folder>
   </folder>

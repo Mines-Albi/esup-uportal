@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="fthivet">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder dlm:origin="outils-lo:/layout/folder/folder[3]" hidden="false" immutable="false" name="boite à outils" type="regular" unremovable="false">
+      <folder dlm:origin="outils-lo:/layout/folder/folder[3]/folder[2]" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+        <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder[2]/channel[2]" type="dlm:position" unremovable="false" fname="reservation_salle"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder[2]/channel" type="dlm:position" unremovable="false" fname="sosinfo"/>
+          <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder[2]/channel[3]" type="dlm:position" unremovable="false" fname="trombinoscope"/>
+        </dlm:positionSet>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+      <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+        <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]/folder[2]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[1]/folder[2]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[1]/folder[4]" type="dlm:position" unremovable="false"/>
+      </dlm:positionSet>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <folder dlm:origin="outils-lo:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+    <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+      <dlm:position hidden="false" immutable="false" name="welcome-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="outils-lo:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[3]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[4]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[5]" type="dlm:position" unremovable="false"/>
+      <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[6]" type="dlm:position" unremovable="false"/>
+    </dlm:positionSet>
+    <folder dlm:origin="permanents:/layout/folder/folder[4]" hidden="false" immutable="false" name="Mon dossier" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+        <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[4]/folder" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[2]/folder[1]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[2]/folder[2]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[2]/folder[3]" type="dlm:position" unremovable="false"/>
+      </dlm:positionSet>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <folder dlm:origin="permanents:/layout/folder/folder[4]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+    </folder>
+    <folder dlm:origin="permanents:/layout/folder/folder[3]" hidden="false" immutable="true" name="pedagogie" type="regular" unremovable="true">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <dlm:positionSet hidden="false" immutable="false" name="" type="dlm:positionSet" unremovable="false">
+        <dlm:position hidden="false" immutable="false" name="permanents:/layout/folder/folder[3]/folder" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[3]/folder[1]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[3]/folder[2]" type="dlm:position" unremovable="false"/>
+        <dlm:position hidden="false" immutable="false" name="fthivet:/layout/folder/folder[3]/folder[3]" type="dlm:position" unremovable="false"/>
+      </dlm:positionSet>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+      </folder>
+      <folder dlm:origin="permanents:/layout/folder/folder[3]/folder" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>25%</value>
+        </structure-attribute>
+        <dlm:editSet hidden="false" immutable="false" name="" type="dlm:editSet" unremovable="false">
+          <dlm:pref hidden="false" immutable="false" name="width" type="dlm:pref" unremovable="false"/>
+        </dlm:editSet>
+      </folder>
+    </folder>
+  </folder>
+</layout>

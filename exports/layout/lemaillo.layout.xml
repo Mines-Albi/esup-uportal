@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="lemaillo">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+        <channel fname="announcements" unremovable="false" hidden="false" immutable="false"/>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+  </folder>
+  <preferences>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="password">
+      <value>xDz5drSoI7r7M62vQeqtAjInvzpYVV6Q</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="username">
+      <value>E7eiylgI0eFA6raKr7U6M8glyl1+r4M+</value>
+    </entry>
+    <entry entity="welcome-lo:/layout/folder/folder[3]/folder/channel" channel="webmail" name="defaultView">
+      <value>preview</value>
+    </entry>
+  </preferences>
+</layout>

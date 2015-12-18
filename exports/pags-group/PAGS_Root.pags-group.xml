@@ -2,14 +2,14 @@
   <name>PAGS Root</name>
   <description>Root group for all PAGS groups.  Convenience for adding PAGS groups to a local group.</description>
   <members>
-    <member-name>Mobile Device Access</member-name>
-    <member-name>Respondr Theme Users</member-name>
-    <member-name>All Users (PAGS)</member-name>
     <member-name>Authenticated Users</member-name>
-    <member-name>Desktop Device Access</member-name>
-    <member-name>Vacataires</member-name>
+    <member-name>Respondr Theme Users</member-name>
     <member-name>Permanents</member-name>
+    <member-name>All Users (PAGS)</member-name>
+    <member-name>Desktop Device Access</member-name>
     <member-name>Eleves</member-name>
+    <member-name>Mobile Device Access</member-name>
     <member-name>People</member-name>
+    <member-name>Vacataires</member-name>
   </members>
 </pags-group>
