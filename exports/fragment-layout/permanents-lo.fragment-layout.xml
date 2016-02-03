@@ -1,65 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="permanents">
-  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
-    <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
-      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
-    </folder>
-    <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
-    <folder ID="s5" dlm:editAllowed="false"  dlm:deleteAllowed="false" hidden="false" immutable="true" name="pedagogie" type="regular" unremovable="true">
-      <structure-attribute>
-        <name>externalId</name>
-        <value>main-student-tab</value>
-      </structure-attribute>
-      <folder ID="s6" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>100%</value>
-        </structure-attribute>
-	<channel fname="campus" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n8"/>
+    <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+	<folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+	    <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+	</folder>
+	<folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+	<folder ID="s5" dlm:editAllowed="false"  dlm:deleteAllowed="false" hidden="false" immutable="true" name="pedagogie" type="regular" unremovable="true">
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
+	    </structure-attribute>
+	    <folder ID="s6" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+		<structure-attribute>
+		    <name>width</name>
+		    <value>100%</value>
+		</structure-attribute>
+		<channel fname="campus" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n8"/>
+	    </folder>
+	</folder>
+	<folder ID="s13" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="false" name="Mon dossier" type="regular" unremovable="false">
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
+	    </structure-attribute>
+	    <folder ID="s14" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+		<structure-attribute>
+		    <name>width</name>
+		    <value>100%</value>
+		</structure-attribute>
+		<channel fname="virhage" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n7"/>
+	    </folder>
+	</folder>
+	<folder ID="s11" dlm:deleteAllowed="false" hidden="false" dlm:editAllowed="false"  immutable="false" name="Dossier Eleves" type="regular" unremovable="false">
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
+	    </structure-attribute>
+	    <folder ID="s12" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+		<structure-attribute>
+		    <name>width</name>
+		    <value>100%</value>
+		</structure-attribute>
+		<channel fname="mes_referes" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n18"/>
+		<channel fname="mes_apprentis" dlm:deleteAllowed="false"  hidden="false" immutable="false" ID="n19"/>
+	    </folder>
+	</folder>
+	<folder ID="s15" dlm:deleteAllowed="false" hidden="false" immutable="false" dlm:editAllowed="false" name="Documentation" type="regular" unremovable="false">
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
+	    </structure-attribute>
+	    <folder ID="s16" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+		<structure-attribute>
+		    <name>width</name>
+		    <value>100%</value>
+		</structure-attribute>
+	    </folder>
 	</folder>
     </folder>
-
-    <folder ID="s13" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="false" name="Mon dossier" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>externalId</name>
-        <value>main-student-tab</value>
-      </structure-attribute>
-      <folder ID="s14" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>100%</value>
-        </structure-attribute>
-	<channel fname="virhage" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n7"/>
-      </folder>
-    </folder>
-
-    <folder ID="s11" dlm:deleteAllowed="false" hidden="false" dlm:editAllowed="false"  immutable="false" name="Dossier Eleves" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>externalId</name>
-        <value>main-student-tab</value>
-      </structure-attribute>
-      <folder ID="s12" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>100%</value>
-        </structure-attribute>
-	<channel fname="mes_referes" unremovable="false" hidden="false" immutable="false" dlm:deleteAllowed="false" ID="n18"/>
-      <channel fname="mes_apprentis" dlm:deleteAllowed="false"  hidden="false" immutable="false" ID="n19"/>
-	</folder>
-    </folder>
-
-    <folder ID="s15" dlm:deleteAllowed="false" hidden="false" immutable="false" dlm:editAllowed="false" name="Documentation" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>externalId</name>
-        <value>main-student-tab</value>
-      </structure-attribute>
-      <folder ID="s16" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>100%</value>
-        </structure-attribute>
-	</folder>
-    </folder>
-
-  </folder>
 </layout>

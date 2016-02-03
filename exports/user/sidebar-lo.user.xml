@@ -8,8 +8,15 @@
     xmlns:ns7="https://source.jasig.org/schemas/uportal/io/portlet-definition"
     xmlns:ns8="https://source.jasig.org/schemas/uportal"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    username="permanents"
-    version="4.0"
+    username="sidebar-lo" version="4.0"
     xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/user https://source.jasig.org/schemas/uportal/io/user/user-4.0.xsd">
     <default-user>defaultTemplateUser</default-user>
+    <attribute>
+        <name>givenName</name>
+        <value>sidebar</value>
+    </attribute>
+    <attribute>
+        <name>sn</name>
+        <value>Layout Owner</value>
+    </attribute>
 </user>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pags-group script="classpath://org/jasig/portal/io/import-pags-group_v4-1.crn">
+  <name>alternants</name>
+  <description>alternants</description>
+  <selection-test>
+    <test-group>
+      <test>
+        <attribute-name>ou</attribute-name>
+        <tester-class>org.jasig.portal.groups.pags.testers.PropertyRegexTester</tester-class>
+        <test-value>^/DE/ELV/IFIA*</test-value>
+      </test>
+    </test-group>
+  </selection-test>
+</pags-group>
+

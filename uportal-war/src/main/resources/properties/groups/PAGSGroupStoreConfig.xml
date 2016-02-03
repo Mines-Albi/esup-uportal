@@ -64,8 +64,8 @@
     <members>
       <member-key>all_users</member-key>
       <member-key>authenticated_users</member-key>
-      <member-key>desktop_device_access</member-key>
       <member-key>mobile_device_access</member-key>
+      <member-key>desktop_device_access</member-key>
       <member-key>respondr_theme_users</member-key>
     </members>
   </group>
@@ -152,7 +152,6 @@
   </group>
 
 <!--==================== Other Examples ====================-->
-
 
 <!--
   Group 2: "Short First Names"

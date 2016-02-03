@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
-    <title>Accueil uPortal</title>
-    <name>Accueil uPortal</name>
-    <fname>uportal-home-page</fname>
-    <desc>Page d'accueil d'uPortal</desc>
-    <type>Inline Frame</type>
-    <timeout>20000</timeout>
+    <title>WebProxyPortlet</title>
+    <name>WebProxyPortlet</name>
+    <fname>webproxy</fname>
+    <desc>Proxy web </desc>
+    <type>Portlet</type>
+    <timeout>5000</timeout>
     <portlet-descriptor>
-        <ns2:isFramework>true</ns2:isFramework>
-        <ns2:portletName>IFrame</ns2:portletName>
+        <ns2:webAppName>/WebProxyPortlet</ns2:webAppName>
+        <ns2:portletName>WebProxyPortlet</ns2:portletName>
     </portlet-descriptor>
-    <category>Actualités</category>
-    <group>Everyone</group>
-    <permissions>
-        <permission system="UP_PORTLET_SUBSCRIBE" activity="BROWSE">
-            <group>Everyone</group>
-        </permission>
-    </permissions>
     <parameter>
         <name>blockImpersonation</name>
         <value>false</value>
@@ -39,11 +32,11 @@
     </parameter>
     <parameter>
         <name>hasAbout</name>
-        <value>true</value>
+        <value>false</value>
     </parameter>
     <parameter>
         <name>hasHelp</name>
-        <value>true</value>
+        <value>false</value>
     </parameter>
     <parameter>
         <name>hideFromDesktop</name>
@@ -54,21 +47,52 @@
         <value>false</value>
     </parameter>
     <parameter>
-        <name>iconUrl</name>
-        <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/mimetypes/text-html.png</value>
-    </parameter>
-    <parameter>
         <name>printable</name>
         <value>false</value>
     </parameter>
     <portlet-preference>
-        <name>height</name>
+        <name>authType</name>
         <readOnly>false</readOnly>
-        <value>800</value>
+        <value>NONE</value>
     </portlet-preference>
     <portlet-preference>
-        <name>url</name>
+        <name>clippingSelector</name>
         <readOnly>false</readOnly>
-        <value>http://www.apereo.org/uportal</value>
+        <value></value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>contentService</name>
+        <readOnly>false</readOnly>
+        <value>httpContentService</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>filters</name>
+        <readOnly>false</readOnly>
+        <value>urlRewritingFilter</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>footerHtml</name>
+        <readOnly>false</readOnly>
+        <value></value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>headerHtml</name>
+        <readOnly>false</readOnly>
+        <value></value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>location</name>
+        <readOnly>false</readOnly>
+        <value>http://www.sciencedirect.com/</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>preInterceptors</name>
+        <readOnly>false</readOnly>
+        <value>userInfoUrlParameterizingPreInterceptor</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>whitelistRegexes</name>
+        <readOnly>false</readOnly>
+        <value></value>
     </portlet-preference>
 </portlet-definition>

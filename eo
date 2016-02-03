@@ -1,6 +1,0 @@
-./uportal-war/target/uPortal/WEB-INF/web.xml:          <param-value>https://ent.mines-albi.fr</param-value>
-./uportal-war/target/uPortal/WEB-INF/web.xml:            <param-value>https://ent.mines-albi.fr/uPortal/CasProxyServlet</param-value>
-./uportal-war/target/uPortal/WEB-INF/classes/properties/security.properties:logoutRedirect.root=https://cas1.mines-albi.fr/logout?service=https://ent.mines-albi.fr/uPortal/Login
-./uportal-war/target/uPortal/WEB-INF/classes/properties/security.properties:org.jasig.portal.channels.CLogin.CasLoginUrl=https://cas1.mines-albi.fr/login?service=https://ent.mines-albi.fr/uPortal/Login
-./uportal-war/target/classes/properties/security.properties:logoutRedirect.root=https://cas1.mines-albi.fr/logout?service=https://ent.mines-albi.fr/uPortal/Login
-./uportal-war/target/classes/properties/security.properties:org.jasig.portal.channels.CLogin.CasLoginUrl=https://cas1.mines-albi.fr/login?service=https://ent.mines-albi.fr/uPortal/Login

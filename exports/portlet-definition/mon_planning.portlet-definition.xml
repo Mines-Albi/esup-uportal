@@ -10,6 +10,9 @@
         <ns2:isFramework>true</ns2:isFramework>
         <ns2:portletName>IFrame</ns2:portletName>
     </portlet-descriptor>
+    <group>Eleves</group>
+    <group>Permanents</group>
+    <group>Vacataires</group>
     <parameter>
         <name>blockImpersonation</name>
         <value>false</value>

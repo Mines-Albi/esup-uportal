@@ -47,4 +47,9 @@
         <name>mobileIconUrl</name>
         <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/actions/preferences-desktop-theme.png</value>
     </parameter>
+    <!-- ajouté EO le 13/01/2016 selon https://wiki.jasig.org/display/UPC/Respondr+Skinning+Process -->
+    <portlet-preference>
+	<name>PREFdynamicSkinName</name>
+	<value>emacSkin</value>
+    </portlet-preference>
 </portlet-definition>

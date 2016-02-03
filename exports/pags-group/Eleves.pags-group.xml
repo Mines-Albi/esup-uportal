@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><pags-group script="classpath://org/jasig/portal/io/import-pags-group_v4-1.crn">
+<?xml version="1.0" encoding="UTF-8"?>
+<pags-group script="classpath://org/jasig/portal/io/import-pags-group_v4-1.crn">
   <name>Eleves</name>
   <description>Eleves</description>
   <selection-test>

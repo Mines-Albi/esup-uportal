@@ -6,9 +6,9 @@
 	</folder>
 	<folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
 	<folder ID="s5" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="true" name="pedagogie" type="regular" unremovable="true">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 1</value>
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
 	    </structure-attribute>
 	    <folder ID="s6" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
 		<structure-attribute>
@@ -19,9 +19,9 @@
 	    </folder>
 	</folder>
 	<folder ID="s13" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="false" name="Mon dossier" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 1</value>
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
 	    </structure-attribute>
 	    <folder ID="s14" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
 		<structure-attribute>
@@ -32,9 +32,9 @@
 	    </folder>
 	</folder>
 	<folder ID="s11" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="false" name="Dossier Eleves" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 1</value>
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
 	    </structure-attribute>
 	    <folder ID="s12" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
 		<structure-attribute>
@@ -47,9 +47,9 @@
 	</folder>
 
 	<folder ID="s15" dlm:deleteAllowed="false" dlm:editAllowed="false" hidden="false" immutable="false" name="Documentation" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 1</value>
+	    <structure-attribute>
+		<name>externalId</name>
+		<value>main-student-tab</value>
 	    </structure-attribute>
 	    <folder ID="s16" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
 		<structure-attribute>
@@ -60,25 +60,25 @@
 	</folder>
 
 	<folder ID="s211" hidden="false" immutable="false" name="Premier sous-onglet" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 2</value>
+	     <structure-attribute type="folder">
+		    <name>tabGroup</name>
+		    <value>Sample Tabs</value>
 	    </structure-attribute>
 	    <channel fname="campus" hidden="false" immutable="false" ID="n212" />
 	</folder>
 
 	<folder ID="s221" hidden="false" immutable="false" name="Deuxième" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 2</value>
+	     <structure-attribute type="folder">
+		    <name>tabGroup</name>
+		    <value>Sample Tabs</value>
 	    </structure-attribute>
 	    <channel fname="virhage" hidden="false" immutable="false" ID="n222" />
 	</folder>
 
 	<folder ID="s231" hidden="false" immutable="false" name="Troisième" type="regular" unremovable="false">
-	    <structure-attribute type="folder">
-		<name>tabGroup</name>
-		<value>Onglet 2</value>
+	     <structure-attribute type="folder">
+		    <name>tabGroup</name>
+		    <value>Sample Tabs</value>
 	    </structure-attribute>
 	    <channel fname="mes_referes" hidden="false" immutable="false" ID="n232" />
 	</folder>

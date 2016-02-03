@@ -34,9 +34,7 @@
          | This property is the ContextSource instance that will be used to connect to LDAP.  Uncomment the
          | following to use the LDAP settings in ldapContext.xml for user attributes, or supply your own.
          +-->
-        <!--
         <property name="ldapContext" ref="defaultLdapContext"/>
-        -->
 
         <!--
          | This property identifies the name of the Person Attribute that
@@ -51,12 +49,13 @@
          |   ...PartialResultException: [LDAP: error code 10...
          | it probably means your baseGroupDn isn't correct!
          +-->
-        <property name="baseGroupDn" value="OU=Membership,DC=unicon,DC=net"/>
+        <!-- <property name="baseGroupDn" value="OU=Membership,DC=unicon,DC=net"/> -->
+        <property name="baseGroupDn" value="ou=Groups,dc=enstimac,dc=fr"/>
 
         <!--
          | LDAP query string that will be passed to the search.
          +-->
-        <property name="filter" value="(objectCategory=group)"/>
+        <property name="filter" value="(objectClass=emacGroup)"/>
 
         <!--
          | Period, in seconds, after which SmartLdap will drop and re-init the groups
@@ -90,7 +89,7 @@
                  | Name of the group attribute that tells you its key.
                  +-->
                 <property name="keyAttributeName">
-                    <value>distinguishedName</value>
+                    <value>dn</value>
                 </property>
                 <!--
                  | Name of the group attribute that tells you its name.
@@ -102,7 +101,7 @@
                  | Name of the group attribute that lists its members.
                  +-->
                 <property name="membershipAttributeName">
-                    <value>member</value>
+                    <value>uniqueMember</value>
                 </property>
             </bean>
         </property>

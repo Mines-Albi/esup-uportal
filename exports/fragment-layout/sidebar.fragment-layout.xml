@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="sidebar-lo">
+  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+    </folder>
+    <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+    <folder ID="s5" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false"  hidden="false" immutable="false" name="Administration" type="sidebar" unremovable="false">
+      <folder ID="s6" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Column" type="sidebar" unremovable="false">
+        <channel fname="portlet-admin" unremovable="false" hidden="false" immutable="false" ID="n7" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+        <channel fname="fragment-admin" unremovable="false" hidden="false" immutable="false" ID="n8" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+        <channel fname="users-manager" unremovable="false" hidden="false" immutable="false" ID="n9" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+        <channel fname="groups-manager" unremovable="false" hidden="false" immutable="false" ID="n10" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+      </folder>
+    </folder>
+    <folder ID="s11" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Communication" type="sidebar" unremovable="false">
+      <folder ID="s12" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Column" type="sidebar" unremovable="false">
+        <channel fname="agenda_intranet" unremovable="false" hidden="false" immutable="false" ID="n13" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+        <channel fname="webcam_cantine" unremovable="false" hidden="false" immutable="false" ID="n14" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+      </folder>
+    </folder>
+    <folder ID="s15" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Liens rapides" type="sidebar" unremovable="false">
+      <folder ID="s16" dlm:addChildAllowed="false" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Column" type="sidebar" unremovable="false">
+        <channel fname="mes_referes" unremovable="false" hidden="false" immutable="false" ID="n17" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+        <channel fname="sosinfo" unremovable="false" hidden="false" immutable="false" ID="n18" dlm:moveAllowed="false" dlm:deleteAllowed="false"/>
+      </folder>
+    </folder>
+  </folder>
+</layout>

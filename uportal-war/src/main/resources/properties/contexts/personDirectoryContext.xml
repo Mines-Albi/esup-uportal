@@ -66,8 +66,6 @@
         <aop:scoped-proxy />
     </bean>
 
-
-
     <!-- ********** Beans for Attributes from the HttpServletRequest **********-->
     <!--
      | Merges attributes from the request with those from other DAOs
