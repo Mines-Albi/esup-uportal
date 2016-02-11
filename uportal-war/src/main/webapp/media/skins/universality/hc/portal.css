@@ -99,7 +99,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -144,7 +144,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -196,7 +196,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -241,7 +241,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -286,7 +286,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -331,7 +331,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
@@ -376,7 +376,7 @@
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   cursor: pointer;
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;

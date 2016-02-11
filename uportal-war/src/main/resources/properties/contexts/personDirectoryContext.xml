@@ -276,6 +276,11 @@
                 <entry key="supannaffectation">             <value>supannaffectation</value></entry>
                 <entry key="objectclass">                   <value>objectclass</value></entry>
                 <entry key="supannorganisme">               <value>supannorganisme</value></entry>
+ 		<!-- modifs MINES ALBI -->
+                <entry key="statut">    <value>statut</value></entry>
+                <entry key="ou">        <value>ou</value></entry>
+		<entry key="memberOf">	<value>memberOf</value></entry>
+ 		<!-- / modifs MINES ALBI -->
             </map>
         </property>
     </bean>
@@ -287,3 +292,4 @@
     </bean>
 
 </beans>
+

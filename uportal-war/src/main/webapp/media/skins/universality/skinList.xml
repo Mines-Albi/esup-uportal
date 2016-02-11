@@ -22,6 +22,14 @@
 
 <skins>
     <skin>
+        <skin-key>albi</skin-key>
+        <skin-name>Mines-Albi</skin-name>
+        <skin-description>
+            Adaptation skin uportal 4 pour Mines-Albi
+        </skin-description>
+    </skin>
+    
+    <skin>
         <skin-key>uportal3</skin-key>
         <skin-name>uPortal 4</skin-name>
         <skin-description>

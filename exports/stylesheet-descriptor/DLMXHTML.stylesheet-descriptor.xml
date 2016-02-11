@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stylesheet-descriptor xmlns="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns2="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns8="https://source.jasig.org/schemas/uportal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor/stylesheet-descriptor-4.0.xsd">
+    <name>DLMXHTML</name>
+    <description>Renders DLMTabsColumns as xhtml</description>
+    <uri>classpath:/layout/theme/universality/universality.xsl</uri>
+    <stylesheet-parameter>
+        <name>skin</name>
+        <default-value>albi</default-value>
+        <scope>PERSISTENT</scope>
+        <description>Skin name</description>
+    </stylesheet-parameter>
+</stylesheet-descriptor>

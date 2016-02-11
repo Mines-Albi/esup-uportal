@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $# in
+  1) PATH40=$1 ;;
+  *) echo "Usage : $0 path du fichier local"; exit 1 ;;
+esac
+
+diff ../esup-uportal-42/$PATH40 $PATH40

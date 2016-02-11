@@ -6120,7 +6120,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -6427,7 +6427,7 @@ mathematical calculations. */
 }
 .up.dashboard-list .dashboard .portal-nav .ui-listview li {
   border: none;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid gainsboro;
 }
 .up.dashboard-list .dashboard .portal-nav .ui-listview li:first {
   border: none;
@@ -6442,9 +6442,9 @@ mathematical calculations. */
 .up.dashboard-list .dashboard .portal-nav .ui-listview li.ui-li-divider {
   border: none;
   box-shadow: none;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 
 /*====================================*/
@@ -6493,9 +6493,9 @@ mathematical calculations. */
   border-color: #c3c3c3;
   background: #cc0000;
   text-shadow: 0 1px 0 white;
-  background-image: -moz-linear-gradient(top, white, #f5f5f5);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #f5f5f5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#f5f5f5')";
+  background-image: -moz-linear-gradient(top, white, whitesmoke);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, whitesmoke));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='whitesmoke')";
 }
 .up .badge.new-item {
   border-color: white;
@@ -6508,7 +6508,7 @@ mathematical calculations. */
 }
 .up .badge.unread-item,
 .up .portlet-content .ui-listview .ui-li-count {
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
   background-image: -moz-linear-gradient(top, #699bc4, #38678f);
@@ -6627,10 +6627,10 @@ mathematical calculations. */
   margin: 0.7em 0 0.3em 0;
 }
 .up .ptl-calendar .upcal-event-list {
-  border-bottom: 1px solid #a9a9a9;
+  border-bottom: 1px solid darkgrey;
 }
 .up .ptl-calendar .upcal-event {
-  border-top: 1px solid #a9a9a9;
+  border-top: 1px solid darkgrey;
   background: white;
   padding: 5px;
   zoom: 1;
@@ -6650,7 +6650,7 @@ mathematical calculations. */
   padding: 0.5em 0;
   text-align: center;
   font-size: 13px;
-  color: #a9a9a9;
+  color: darkgrey;
 }
 .up .ptl-calendar .upcal-event .upcal-event-time span {
   font-size: 16px;
@@ -6664,7 +6664,7 @@ mathematical calculations. */
   border-width: 1px;
   border-style: solid;
   border-color: #8f8f8f;
-  background: #dcdcdc;
+  background: gainsboro;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -6789,10 +6789,10 @@ mathematical calculations. */
 .up .focused {
   color: #444444;
   text-shadow: 0 1px 0 white;
-  background: #dcdcdc;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #dcdcdc);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f5f5), color-stop(1, #dcdcdc));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#dcdcdc')";
+  background: gainsboro;
+  background-image: -moz-linear-gradient(top, whitesmoke, gainsboro);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, whitesmoke), color-stop(1, gainsboro));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='whitesmoke', EndColorStr='gainsboro')";
 }
 .up .portlet-wrapper-titlebar {
   border-color: #121416;
@@ -6817,12 +6817,12 @@ mathematical calculations. */
 }
 .up .portlet-wrapper-titlebar .ui-btn-hover-a, .up .portlet-wrapper-titlebar .ui-btn-hover-b, .up .portlet-wrapper-titlebar .ui-btn-hover-c, .up .portlet-wrapper-titlebar .ui-btn-hover-d, .up .portlet-wrapper-titlebar .ui-btn-hover-e {
   border-color: #08180f;
-  background: #2e8b57;
+  background: seagreen;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #2e8b57, #143f27);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2e8b57), color-stop(1, #143f27));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2e8b57', EndColorStr='#143f27')";
+  background-image: -moz-linear-gradient(top, seagreen, #143f27);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, seagreen), color-stop(1, #143f27));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='seagreen', EndColorStr='#143f27')";
 }
 .up .portlet-wrapper-titlebar .ui-btn-hover-a a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-hover-b a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-hover-c a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-hover-d a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-hover-e a.ui-link-inherit {
   color: white;
@@ -6832,21 +6832,21 @@ mathematical calculations. */
   background: #21653f;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #143f27, #2e8b57);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #143f27), color-stop(1, #2e8b57));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#143f27', EndColorStr='#2e8b57')";
+  background-image: -moz-linear-gradient(top, #143f27, seagreen);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #143f27), color-stop(1, seagreen));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#143f27', EndColorStr='seagreen')";
 }
 .up .portlet-wrapper-titlebar .ui-btn-down-a a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-down-b a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-down-c a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-down-d a.ui-link-inherit, .up .portlet-wrapper-titlebar .ui-btn-down-e a.ui-link-inherit {
   color: white;
 }
 .up .portlet-wrapper-titlebar .ui-btn-active {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-wrapper-titlebar .ui-btn-active a.ui-link-inherit {
   color: white;
@@ -6856,18 +6856,18 @@ mathematical calculations. */
   background: #38678f;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-titlebar .ui-btn-up-a, .up .portlet-titlebar .ui-btn-up-b, .up .portlet-titlebar .ui-btn-up-c, .up .portlet-titlebar .ui-btn-up-d, .up .portlet-titlebar .ui-btn-up-e {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-titlebar .ui-btn-up-a a.ui-link-inherit, .up .portlet-titlebar .ui-btn-up-b a.ui-link-inherit, .up .portlet-titlebar .ui-btn-up-c a.ui-link-inherit, .up .portlet-titlebar .ui-btn-up-d a.ui-link-inherit, .up .portlet-titlebar .ui-btn-up-e a.ui-link-inherit {
   color: white;
@@ -6886,24 +6886,24 @@ mathematical calculations. */
 }
 .up .portlet-titlebar .ui-btn-down-a, .up .portlet-titlebar .ui-btn-down-b, .up .portlet-titlebar .ui-btn-down-c, .up .portlet-titlebar .ui-btn-down-d, .up .portlet-titlebar .ui-btn-down-e {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #294d6b, #4682b4);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #294d6b), color-stop(1, #4682b4));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#294d6b', EndColorStr='#4682b4')";
+  background-image: -moz-linear-gradient(top, #294d6b, steelblue);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #294d6b), color-stop(1, steelblue));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#294d6b', EndColorStr='steelblue')";
 }
 .up .portlet-titlebar .ui-btn-down-a a.ui-link-inherit, .up .portlet-titlebar .ui-btn-down-b a.ui-link-inherit, .up .portlet-titlebar .ui-btn-down-c a.ui-link-inherit, .up .portlet-titlebar .ui-btn-down-d a.ui-link-inherit, .up .portlet-titlebar .ui-btn-down-e a.ui-link-inherit {
   color: white;
 }
 .up .portlet-titlebar .ui-btn-active {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-titlebar .ui-btn-active a.ui-link-inherit {
   color: white;
@@ -6926,47 +6926,47 @@ mathematical calculations. */
 }
 .up .portlet-content .ui-btn-up-a, .up .portlet-content .ui-btn-up-b, .up .portlet-content .ui-btn-up-c, .up .portlet-content .ui-btn-up-d, .up .portlet-content .ui-btn-up-e {
   border-color: #c3c3c3;
-  background: #f5f5f5;
+  background: whitesmoke;
   color: #444444;
   text-shadow: 0 1px 0 white;
-  background-image: -moz-linear-gradient(top, white, #f5f5f5);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #f5f5f5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#f5f5f5')";
+  background-image: -moz-linear-gradient(top, white, whitesmoke);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, whitesmoke));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='whitesmoke')";
 }
 .up .portlet-content .ui-btn-up-a a.ui-link-inherit, .up .portlet-content .ui-btn-up-b a.ui-link-inherit, .up .portlet-content .ui-btn-up-c a.ui-link-inherit, .up .portlet-content .ui-btn-up-d a.ui-link-inherit, .up .portlet-content .ui-btn-up-e a.ui-link-inherit {
   color: #5c5c5c;
 }
 .up .portlet-content .ui-btn-hover-a, .up .portlet-content .ui-btn-hover-b, .up .portlet-content .ui-btn-hover-c, .up .portlet-content .ui-btn-hover-d, .up .portlet-content .ui-btn-hover-e {
   border-color: #8f8f8f;
-  background: #dcdcdc;
+  background: gainsboro;
   text-shadow: 0 1px 0 white;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #dcdcdc);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f5f5), color-stop(1, #dcdcdc));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#dcdcdc')";
+  background-image: -moz-linear-gradient(top, whitesmoke, gainsboro);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, whitesmoke), color-stop(1, gainsboro));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='whitesmoke', EndColorStr='gainsboro')";
 }
 .up .portlet-content .ui-btn-hover-a a.ui-link-inherit, .up .portlet-content .ui-btn-hover-b a.ui-link-inherit, .up .portlet-content .ui-btn-hover-c a.ui-link-inherit, .up .portlet-content .ui-btn-hover-d a.ui-link-inherit, .up .portlet-content .ui-btn-hover-e a.ui-link-inherit {
   color: #5c5c5c;
 }
 .up .portlet-content .ui-btn-down-a, .up .portlet-content .ui-btn-down-b, .up .portlet-content .ui-btn-down-c, .up .portlet-content .ui-btn-down-d, .up .portlet-content .ui-btn-down-e {
   border-color: #294d6b;
-  background: #dcdcdc;
+  background: gainsboro;
   color: #444444;
   text-shadow: 0 1px 0 white;
-  background-image: -moz-linear-gradient(top, #dcdcdc, white);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dcdcdc), color-stop(1, white));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dcdcdc', EndColorStr='white')";
+  background-image: -moz-linear-gradient(top, gainsboro, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, gainsboro), color-stop(1, white));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='gainsboro', EndColorStr='white')";
 }
 .up .portlet-content .ui-btn-down-a a.ui-link-inherit, .up .portlet-content .ui-btn-down-b a.ui-link-inherit, .up .portlet-content .ui-btn-down-c a.ui-link-inherit, .up .portlet-content .ui-btn-down-d a.ui-link-inherit, .up .portlet-content .ui-btn-down-e a.ui-link-inherit {
   color: #5c5c5c;
 }
 .up .portlet-content .ui-btn-active {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-content .ui-btn-active a.ui-link-inherit {
   color: white;
@@ -6974,15 +6974,15 @@ mathematical calculations. */
 .up .portlet-content .ui-li-divider {
   border-color: #38678f;
   border-top: 1px solid #699bc4;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
   background-image: -moz-linear-gradient(top, #38678f, #699bc4);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #38678f), color-stop(1, #699bc4));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#38678f', EndColorStr='#699bc4')";
-  -moz-box-shadow: 0 0 5px #999;
-  -webkit-box-shadow: 0 0 5px #999;
-  box-shadow: 0 0 5px #999;
+  -moz-box-shadow: 0 0 5px #999999;
+  -webkit-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
   z-index: 1;
 }
 .up .portlet-content .ui-li-divider .ui-grid-a .ui-block-b {
@@ -6993,16 +6993,16 @@ mathematical calculations. */
   background: #21653f;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #2e8b57, #143f27);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2e8b57), color-stop(1, #143f27));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2e8b57', EndColorStr='#143f27')";
+  background-image: -moz-linear-gradient(top, seagreen, #143f27);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, seagreen), color-stop(1, #143f27));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='seagreen', EndColorStr='#143f27')";
 }
 .up .portlet-content .utilities .ui-btn-up-a a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-up-b a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-up-c a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-up-d a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-up-e a.ui-link-inherit {
   color: white;
 }
 .up .portlet-content .utilities .ui-btn-hover-a, .up .portlet-content .utilities .ui-btn-hover-b, .up .portlet-content .utilities .ui-btn-hover-c, .up .portlet-content .utilities .ui-btn-hover-d, .up .portlet-content .utilities .ui-btn-hover-e {
   border-color: #143f27;
-  background: #2e8b57;
+  background: seagreen;
   color: white;
   text-shadow: 0 -1px 0 black;
   background-image: -moz-linear-gradient(top, #3ab26f, #143f27);
@@ -7017,21 +7017,21 @@ mathematical calculations. */
   background: #21653f;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #143f27, #2e8b57);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #143f27), color-stop(1, #2e8b57));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#143f27', EndColorStr='#2e8b57')";
+  background-image: -moz-linear-gradient(top, #143f27, seagreen);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #143f27), color-stop(1, seagreen));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#143f27', EndColorStr='seagreen')";
 }
 .up .portlet-content .utilities .ui-btn-down-a a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-down-b a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-down-c a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-down-d a.ui-link-inherit, .up .portlet-content .utilities .ui-btn-down-e a.ui-link-inherit {
   color: white;
 }
 .up .portlet-content .utilities .ui-btn-active {
   border-color: #294d6b;
-  background: #4682b4;
+  background: steelblue;
   color: white;
   text-shadow: 0 -1px 0 black;
-  background-image: -moz-linear-gradient(top, #4682b4, #294d6b);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4682b4), color-stop(1, #294d6b));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4682b4', EndColorStr='#294d6b')";
+  background-image: -moz-linear-gradient(top, steelblue, #294d6b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, steelblue), color-stop(1, #294d6b));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='steelblue', EndColorStr='#294d6b')";
 }
 .up .portlet-content .utilities .ui-btn-active a.ui-link-inherit {
   color: white;

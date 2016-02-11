@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><group script="classpath://org/jasig/portal/io/import-group_membership_v3-2.crn">
+  <name>Everyone</name>
+  <entity-type>org.jasig.portal.security.IPerson</entity-type>
+  <creator>system</creator>
+  <description>Toutes les personnes</description>
+  <children>
+    <group>Authenticated Users</group>
+    <group>PAGS Root</group>
+    <group>Faculty</group>
+    <group>Guests</group>
+    <group>Portal System</group>
+    <group>Staff</group>
+    <group>Students</group>
+    <!-- Ajout des groupes SmartLdap -->
+    <group>SmartLdap ROOT</group>
+  </children>
+</group>

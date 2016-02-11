@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
+    <title>Conseils ENT</title>
+    <name>Conseils ENT</name>
+    <fname>tips</fname>
+    <desc>Conseils, trucs et astuces autour de l'utilisation de votre ENT</desc>
+    <type>Portlet</type>
+    <timeout>20000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/jasig-widget-portlets</ns2:webAppName>
+        <ns2:portletName>tips</ns2:portletName>
+    </portlet-descriptor>
+    <category>Démonstration</category>
+    <group>Everyone</group>
+    <parameter>
+        <name>alternate</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>blockImpersonation</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>editable</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasAbout</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasHelp</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hideFromMobile</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>highlight</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>role</name>
+        <value>tips</value>
+    </parameter>
+    <parameter>
+        <name>showChrome</name>
+        <value>true</value>
+    </parameter>
+    <portlet-preference>
+        <name>tips</name>
+        <readOnly>true</readOnly>
+        <value>Pour toutes questions techniques vous pouvez utiliser l'outil d'assistance en ligne.</value>
+        <value>Lorsque vous utilisez une station d'accueil publique, n'oubliez pas de vous d�connecter d�finitvement en fermant compl�tement votre navigateur.</value>
+        <value>De nouveaux services/portlets peuvent �tre ajout�s � votre page en cliquant sur 'Personnaliser'.</value>
+        <value>Beaucoup de portlets peuvent �tre d�plac�es par glisser-d�placer en cliquant sur l'ent�te de la portlet.</value>
+        <value>Quelques portlets proposent des options de configuration (cliquez sur l'ic�ne 'engrenage' dans l'ent�te de la portlet).</value>
+        <value>Vous pouvez supprimer une portlet en cliquant sur l'ic�ne 'X' dans l'ent�te de la portlet.</value>
+        <value>Quelques portlets pr�sentent plus de fonctionnalit�s en mode 'maximis�' (cliquez sur l'ic�ne 'fl�che' dans l'ent�te de la portlet).</value>
+        <value>Cet ENT propose une interface adapt�e aux mobiles (iPhone et Android).</value>
+        <value>'Mise en page' vous permet de changer le nombre de colonnes pr�sent�es sur un onglet.</value>
+        <value>'Ajouter un onglet' vous permet d'ajouter votre propre onglet dans lequel vous pouvez ajouter les portlets que vous voulez.</value>
+        <value>Votre service d'assistance ENT peut r�initialiser votre mise en page � votre demande.</value>
+        <value>La portlet 'M�t�o' vous propose d'ajouter d'autres lieux, vous pourrez alors r�ver de partir en vacances � Saint Malo ou � Font-Romeu</value>
+        <value>Cet ENT est d�velopp� avec EsupPortail, application OpenSource issue de la communaut� d'enseignement sup�rieur EsupPortail - http://www.esup-portail.org.</value>
+    </portlet-preference>
+</portlet-definition>

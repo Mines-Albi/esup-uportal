@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
+    <title>Météo</title>
+    <name>Météo</name>
+    <fname>weather</fname>
+    <desc>Prévisions météorologiques</desc>
+    <type>Portlet</type>
+    <timeout>15000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/WeatherPortlet</ns2:webAppName>
+        <ns2:portletName>Weather</ns2:portletName>
+    </portlet-descriptor>
+    <category>Information</category>
+    <group>Everyone</group>
+    <parameter>
+        <name>editable</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>iconUrl</name>
+        <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/status/weather-few-clouds.png</value>
+    </parameter>
+    <parameter>
+        <name>mobileIconUrl</name>
+        <value>/uPortal/media/skins/icons/mobile/weather.png</value>
+    </parameter>
+    <parameter>
+        <name>portletName</name>
+        <value>Weather</value>
+    </parameter>
+    <portlet-preference>
+        <name>locationCodes</name>
+        <readOnly>false</readOnly>
+        <value>2459115</value>
+        <value>1118370</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>locations</name>
+        <readOnly>false</readOnly>
+        <value>New York, NY</value>
+        <value>Tokyo, Japan(Tokyo)</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>units</name>
+        <readOnly>false</readOnly>
+        <value>F</value>
+        <value>C</value>
+    </portlet-preference>
+</portlet-definition>

@@ -79,9 +79,10 @@
 
     <!--
      | LDAP query string that will be passed to the search.
+     | EMAC - les groupes sont des objets emacGroup !
      +-->
     <bean id="filter" class="java.lang.String">
-        <constructor-arg><value>(objectClass=eduMember)</value></constructor-arg>
+        <constructor-arg><value>(objectClass=emacGroup)</value></constructor-arg>
     </bean>
 
     <!--
@@ -109,7 +110,7 @@
      | lists the SmartLdap groups each person is a member of.
      +-->
     <bean id="memberOfAttributeName" class="java.lang.String">
-        <constructor-arg><value>isMemberOf</value></constructor-arg>
+        <constructor-arg><value>memberOf</value></constructor-arg>
     </bean>
 
     <!--
@@ -121,9 +122,9 @@
          | Name of the group attribute that tells you its key.
          | If ommited, will use the dn.  
          +-->
-        <property name="keyAttributeName">
+        <!-- <property name="keyAttributeName">
             <value>cn</value>
-        </property>
+        </property> -->
         <!--
          | Name of the group attribute that tells you its name.
          +-->
@@ -134,7 +135,7 @@
          | Name of the group attribute that lists its members.
          +-->
         <property name="membershipAttributeName">
-            <value>member</value>
+            <value>uniqueMember</value>
         </property>
     </bean>
 

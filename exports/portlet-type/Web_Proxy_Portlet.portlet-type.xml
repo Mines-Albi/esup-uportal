@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-type xmlns="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:ns2="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns8="https://source.jasig.org/schemas/uportal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-type https://source.jasig.org/schemas/uportal/io/portlet-type/portlet-type-4.0.xsd">
+    <name>Web Proxy Portlet</name>
+    <description>Web Proxy Portlet</description>
+    <uri>/org/jasig/portal/portlets/webproxy/WebProxyPortlet.cpd.xml</uri>
+</portlet-type>

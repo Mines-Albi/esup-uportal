@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
+    <title>Se connecter</title>
+    <name>Se connecter</name>
+    <fname>logging-in</fname>
+    <desc>Résumé des comptes utilisateurs par défaut</desc>
+    <type>CMS</type>
+    <timeout>10000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/SimpleContentPortlet</ns2:webAppName>
+        <ns2:portletName>cms</ns2:portletName>
+    </portlet-descriptor>
+    <group>Everyone</group>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>iconUrl</name>
+        <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/actions/system-log-out.png</value>
+    </parameter>
+    <portlet-preference>
+        <name>content</name>
+        <readOnly>false</readOnly>
+        <value>
+            
+                &lt;h2&gt;How and why to log in&lt;/h2&gt;
+                
+                &lt;p&gt;As you can see, uPortal can aggregate and present content generically for 
+                unauthenticated users. When users log in, uPortal can do much more, with personalized 
+                content, customized layouts, group membership, and access control. These are the 
+                example username, password pairs for the example users included with uPortal:&lt;/p&gt;
+                
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Username&lt;/th&gt;&lt;th&gt;Password&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;student&lt;/td&gt;&lt;td&gt;student&lt;/td&gt;&lt;td&gt;Mocked up student content&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;admin&lt;/td&gt;&lt;td&gt;admin&lt;/td&gt;
+                        &lt;td&gt;Be sure to change this password! The admin user can administer many 
+                        aspects of the portal, including publishing new content and editing access control.&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;developer&lt;/td&gt;&lt;td&gt;developer&lt;/td&gt;
+                        &lt;td&gt;Be sure to change this password! The developer user can administer many 
+                        aspects of the portal, including publishing new content and editing access control.&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;faculty&lt;/td&gt;&lt;td&gt;faculty&lt;/td&gt;&lt;td&gt;Mocked up faculty content&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;staff&lt;/td&gt;&lt;td&gt;staff&lt;/td&gt;&lt;td&gt;Mocked up staff content&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            
+        </value>
+    </portlet-preference>
+</portlet-definition>
