@@ -23,7 +23,7 @@
 <!-- ============================= -->
 <!-- ========== README =========== -->
 <!-- ============================= -->
-<!--
+<!-- 
  | The theme is written in XSL. For more information on XSL, refer to [http://www.w3.org/Style/XSL/].
  | Baseline XSL skill is strongly recommended before modifying this file.
  |
@@ -49,7 +49,7 @@
 <!-- ============================================= -->
 <!-- ========== STYLESHEET DELCARATION =========== -->
 <!-- ============================================= -->
-<!--
+<!-- 
  | RED
  | This statement defines this document as XSL and declares the Xalan extension
  | elements used for URL generation and permissions checks.
@@ -57,9 +57,9 @@
  | If a change is made to this section it MUST be copied to all other XSL files
  | used by the theme
 -->
-<xsl:stylesheet
+<xsl:stylesheet 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:dlm="http://www.uportal.org/layout/dlm"
     xmlns:upAuth="http://xml.apache.org/xalan/java/org.jasig.portal.security.xslt.XalanAuthorizationHelper"
     xmlns:upGroup="http://xml.apache.org/xalan/java/org.jasig.portal.security.xslt.XalanGroupMembershipHelper"
@@ -67,34 +67,34 @@
     xmlns:upElemTitle="http://xml.apache.org/xalan/java/org.jasig.portal.security.xslt.XalanLayoutElementTitleHelper"
     xmlns:url="https://source.jasig.org/schemas/uportal/layout/portal-url"
     xsi:schemaLocation="
-            https://source.jasig.org/schemas/uportal/layout/portal-url https://source.jasig.org/schemas/uportal/layout/portal-url-4.0.xsd"
-    exclude-result-prefixes="url upAuth upGroup upMsg upElemTitle dlm xsi"
+    https://source.jasig.org/schemas/uportal/layout/portal-url https://source.jasig.org/schemas/uportal/layout/portal-url-4.0.xsd"
+    exclude-result-prefixes="url upAuth upGroup upMsg upElemTitle dlm xsi" 
     version="1.0">
 
-  <!-- ============================= -->
-  <!-- ========== IMPORTS ========== -->
-  <!-- ============================= -->
-  <!--
-   | RED
-   | Imports are the XSL files that build the theme.
-   | Import statments and the XSL files they refer to should not be modified.
-   | For customization of the theme, use the Varaiables and Parameters and Templates sections below.
-  -->
-  <xsl:import href="../resourcesTemplates.xsl" />  <!-- Templates for Skin Resource generation -->
-  <xsl:import href="../urlTemplates.xsl" />        <!-- Templates for URL generation -->
-  <xsl:import href="page.xsl" />        <!-- Templates for page structure -->
-  <xsl:import href="navigation.xsl" />  <!-- Templates for navigation structure -->
-  <xsl:import href="components.xsl" />  <!-- Templates for UI components (login, web search, etc.) -->
-  <xsl:import href="columns.xsl" />     <!-- Templates for column structure -->
-  <xsl:import href="content.xsl" />     <!-- Templates for content structure (i.e. portlets) -->
-  <xsl:import href="preferences.xsl" /> <!-- Templates for preferences-specific structures -->
-  <!-- ============================= -->
+    <!-- ============================= -->
+    <!-- ========== IMPORTS ========== -->
+    <!-- ============================= -->
+    <!-- 
+    | RED
+    | Imports are the XSL files that build the theme.
+    | Import statments and the XSL files they refer to should not be modified.
+    | For customization of the theme, use the Varaiables and Parameters and Templates sections below.
+    -->
+    <xsl:import href="../resourcesTemplates.xsl" />  <!-- Templates for Skin Resource generation -->
+    <xsl:import href="../urlTemplates.xsl" />        <!-- Templates for URL generation -->
+    <xsl:import href="page.xsl" />        <!-- Templates for page structure -->
+    <xsl:import href="navigation.xsl" />  <!-- Templates for navigation structure -->
+    <xsl:import href="components.xsl" />  <!-- Templates for UI components (login, web search, etc.) -->
+    <xsl:import href="columns.xsl" />     <!-- Templates for column structure -->
+    <xsl:import href="content.xsl" />     <!-- Templates for content structure (i.e. portlets) -->
+    <xsl:import href="preferences.xsl" /> <!-- Templates for preferences-specific structures -->
+    <!-- ============================= -->
 
 
-  <!-- ========================================= -->
-  <!-- ========== OUTPUT DELCARATION =========== -->
-  <!-- ========================================= -->
-  <!--
+    <!-- ========================================= -->
+    <!-- ========== OUTPUT DELCARATION =========== -->
+    <!-- ========================================= -->
+    <!-- 
    | RED
    | This statement instructs the XSL how to output.
   -->
@@ -105,7 +105,7 @@
   <!-- ============================================== -->
   <!-- ========== VARIABLES and PARAMETERS ========== -->
   <!-- ============================================== -->
-  <!--
+  <!-- 
    | YELLOW - GREEN
    | These variables and parameters provide flexibility and customization of the user interface.
    | Changing the values of the variables and parameters signals the theme to reconfigure use and location of user interface components.
@@ -114,7 +114,7 @@
 
 
   <!-- ****** XSL UTILITY PARAMETERS ****** -->
-  <!--
+  <!-- 
    | RED
    | Parameters used by XSL->Java Callbacks
   -->
@@ -124,13 +124,17 @@
 
 
   <!-- ****** SKIN SETTINGS ****** -->
-  <!--
+  <!-- 
    | YELLOW
    | Skin Settings can be used to change the location of skin files.
   -->
   <xsl:param name="userImpersonating">false</xsl:param>
   <xsl:param name="skin">uportal3</xsl:param>
   <xsl:param name="CONTEXT_PATH">/NOT_SET</xsl:param>
+  <!-- ofranco -->
+  <xsl:param name="subNavigationLinkAsAnchor">false</xsl:param>
+  <!-- ofranco -->
+  <xsl:param name="targetChannelID">none</xsl:param>
   <xsl:variable name="SKIN" select="$skin"/>
   <xsl:variable name="MEDIA_PATH">media/skins/universality</xsl:variable>
   <xsl:variable name="ABSOLUTE_MEDIA_PATH" select="concat($CONTEXT_PATH,'/',$MEDIA_PATH)"/>
@@ -138,19 +142,19 @@
   <xsl:variable name="SKIN_PATH" select="concat($ABSOLUTE_MEDIA_PATH,'/',$SKIN)"/>
   <xsl:variable name="PORTAL_SHORTCUT_ICON" select="concat($CONTEXT_PATH,'/favicon.ico')" />
   <xsl:variable name="FLUID_THEME">
-    <xsl:call-template name="skinParameter">
-        <xsl:with-param name="path" select="$SKIN_RESOURCES_PATH" />
-        <xsl:with-param name="name">fss-theme</xsl:with-param>
-    </xsl:call-template>
+      <xsl:call-template name="skinParameter">
+          <xsl:with-param name="path" select="$SKIN_RESOURCES_PATH" />
+          <xsl:with-param name="name">fss-theme</xsl:with-param>
+      </xsl:call-template>
   </xsl:variable>
   <xsl:variable name="FLUID_THEME_CLASS">
-    <xsl:choose>
-      <xsl:when test="$FLUID_THEME"><xsl:value-of select="$FLUID_THEME"/></xsl:when>
-      <xsl:otherwise>fl-theme-uportal</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$FLUID_THEME"><xsl:value-of select="$FLUID_THEME"/></xsl:when>
+          <xsl:otherwise>fl-theme-uportal</xsl:otherwise>
+      </xsl:choose>
   </xsl:variable>
 
-  <!--
+  <!-- 
    | The unofficial "theme-switcher".
    | The INSTITUTION variable can be used to make logical tests and configure the theme on a per skin basis.
    | Allows the the theme to configure differently for a skin or group of skins, yet not break for other skins that might require a different configuration.
@@ -158,24 +162,25 @@
    | May require the addition of an xsl:choose statement around parameters, vairables, and template calls.
   -->
   <xsl:variable name="INSTITUTION">
-    <xsl:choose>
-      <xsl:when test="$SKIN='university' or $SKIN='university-div1' or $SKIN='university-div2'">university</xsl:when> <!-- Set all institution skins to a specific theme configuration  -->
-      <xsl:when test="$SKIN='coal'">coal</xsl:when>
-      <xsl:when test="$SKIN='ivy'">ivy</xsl:when>
-	  <xsl:when test="$SKIN='hc'">hc</xsl:when>
-      <xsl:otherwise>uportal</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$SKIN='university' or $SKIN='university-div1' or $SKIN='university-div2'">university</xsl:when> <!-- Set all institution skins to a specific theme configuration  -->
+          <xsl:when test="$SKIN='coal'">coal</xsl:when>
+          <xsl:when test="$SKIN='ivy'">ivy</xsl:when>
+          <xsl:when test="$SKIN='hc'">hc</xsl:when>
+          <xsl:otherwise>uportal</xsl:otherwise>
+      </xsl:choose>
   </xsl:variable>
 
   <!-- ****** LOCALIZATION SETTINGS ****** -->
-  <!--
+  <!-- 
    | GREEN
    | Locatlization Settings can be used to change the localization of the theme.
   -->
-	<xsl:param name="USER_LANG">fr</xsl:param> <!-- Sets the default user language. -->
+        <xsl:param name="USER_LANG">fr</xsl:param> <!-- Sets the default user language. -->
 
-  <!-- ****** PORTAL SETTINGS ****** -->
-  <!--
+
+        <!-- ****** PORTAL SETTINGS ****** -->
+        <!-- 
    | YELLOW
    | Portal Settings should generally not be (and not need to be) modified.
   -->
@@ -189,46 +194,46 @@
   <xsl:param name="STATS_SESSION_ID"></xsl:param>
   <xsl:param name="EXTERNAL_LOGIN_URL"></xsl:param>
   <xsl:param name="PORTAL_VIEW">
-  	<xsl:choose>
-      <xsl:when test="//layout_fragment">detached</xsl:when>
-      <xsl:when test="//focused">focused</xsl:when>
-      <xsl:otherwise>dashboard</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="//layout_fragment">detached</xsl:when>
+          <xsl:when test="//focused">focused</xsl:when>
+          <xsl:otherwise>dashboard</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
   <xsl:param name="USE_AJAX" select="'true'"/>
   <xsl:param name="useTabGroups">false</xsl:param>
   <xsl:variable name="USE_TAB_GROUPS">
-    <xsl:choose>
-      <!-- Shut off Tab Groups automatically if there's only one -->
-      <xsl:when test="count(/layout/navigation/tabGroupsList/tabGroup) &lt; 2">false</xsl:when>
-      <xsl:otherwise><xsl:value-of select="$useTabGroups"/></xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <!-- Shut off Tab Groups automatically if there's only one -->
+          <xsl:when test="count(/layout/navigation/tabGroupsList/tabGroup) &lt; 2">false</xsl:when>
+          <xsl:otherwise><xsl:value-of select="$useTabGroups"/></xsl:otherwise>
+      </xsl:choose>
   </xsl:variable>
   <xsl:variable name="ACTIVE_TAB_GROUP" select="/layout/navigation/tabGroupsList/@activeTabGroup"/>
   <xsl:param name="JS_LIBRARY_SKIN">
-  	<xsl:choose>
-      <xsl:when test="$USE_AJAX='true'">jqueryui</xsl:when>
-      <xsl:otherwise></xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$USE_AJAX='true'">jqueryui</xsl:when>
+          <xsl:otherwise></xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
   <xsl:param name="AUTHENTICATED" select="'false'"/>
   <xsl:param name="LOGIN_STATE">
-  	<xsl:choose>
-  		<xsl:when test="$AUTHENTICATED='true'">logged-in</xsl:when>
-      <xsl:otherwise>not-logged-in</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$AUTHENTICATED='true'">logged-in</xsl:when>
+          <xsl:otherwise>not-logged-in</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
   <xsl:param name="COLUMNS" select="count(//content/column)"/>
   <xsl:variable name="IS_FRAGMENT_ADMIN_MODE">
-    <xsl:choose>
-        <xsl:when test="//channel[@fname = 'fragment-admin-exit']">true</xsl:when>
-        <xsl:otherwise>false</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="//channel[@fname = 'fragment-admin-exit']">true</xsl:when>
+          <xsl:otherwise>false</xsl:otherwise>
+      </xsl:choose>
   </xsl:variable>
 
 
   <!-- ****** INSTITUTION SETTINGS ****** -->
-  <!--
+  <!-- 
    | GREEN
    | Institution Settings can be used to change intitution-specific parts of the theme.
    | Refer to localization notes above for changing text and labels used in the theme.
@@ -238,9 +243,8 @@
   <xsl:variable name="CAS_NEW_USER_URL">http://www.jasig.org/cas</xsl:variable>
 
 
-
   <!-- ****** NAVIGATION SETTINGS ****** -->
-  <!--
+  <!-- 
    | GREEN
    | Navigation Settings can be used to change the navigation.
   -->
@@ -256,7 +260,7 @@
   <xsl:param name="USE_SUBNAVIGATION_ROW" select="false" />
 
   <!-- ****** LAYOUT SETTINGS ****** -->
-  <!--
+  <!-- 
    | GREEN
    | Layout Settings can be used to change the main layout.
   -->
@@ -266,8 +270,6 @@
   | USE_SIDEBAR - Sets the use of a sidebar in the logged in, dashboard view.  This sidebar can contain UI components (navigation, quicklinks, etc.) and custom institution content (blocks), but not portlets.  Values are 'true' or 'false'.
   | USE_SIDEBAR_FOCUSED - Sets the use of a sidebar when a portlet is focused.  Values are 'true' or 'false'.
   | USE_SIDEBAR_GUEST - Sets the use of a sidebar when logged out.  Values are 'true' or 'false'.
-  | USE_SIDEBAR_TOGGLE - Set the use of the up-sidebar-improved.js to enable authenticated users to show or hide the sidebar and sidebar elements.
-  | SIDEBAR_TOGGLE_INIT - Sets the sidebar state as shown or hidden at the user connection, values are 'opened' or 'closed'.
   | SIDEBAR_LOCATION - Sets the location of the sidebar - if used - in the logged in, dashboard view.  Values are 'left' or 'right'.
   | SIDEBAR_LOCATION_FOCUSED - Sets the location of the sidebar - if used - in the focused view.  Values are 'left' or 'right'.
   | SIDEBAR_LOCATION_GUEST - Sets the location of the sidebar - if used - when logged out.  Values are 'left' or 'right'.
@@ -277,80 +279,80 @@
   -->
   <!-- Use the INSTITUTION parameter to configure the sidebar on a per skin/institution basis. -->
   <xsl:param name="USE_SIDEBAR">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
-      <xsl:otherwise>false</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
+          <xsl:otherwise>false</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="USE_SIDEBAR_FOCUSED">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
-      <xsl:otherwise>false</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
+          <xsl:otherwise>false</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="USE_SIDEBAR_GUEST">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
-      <xsl:otherwise>false</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='ivy'">false</xsl:when>
+          <xsl:otherwise>false</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="USE_SIDEBAR_TOGGLE">
-    <xsl:choose>
-      <xsl:when test="$USE_SIDEBAR='false' or $INSTITUTION='ivy'">false</xsl:when>
-      <xsl:otherwise>true</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$USE_SIDEBAR='false' or $INSTITUTION='ivy'">false</xsl:when>
+          <xsl:otherwise>true</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_TOGGLE_INIT">
-    <xsl:choose>
-      <xsl:when test="USE_SIDEBAR_TOGGLE='false' or $INSTITUTION='ivy'">opened</xsl:when>
-      <xsl:otherwise>closed</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="USE_SIDEBAR_TOGGLE='false' or $INSTITUTION='ivy'">opened</xsl:when>
+          <xsl:otherwise>closed</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_LOCATION">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal' or $INSTITUTION='hc'">right</xsl:when>
-      <xsl:otherwise>left</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal' or $INSTITUTION='hc'">right</xsl:when>
+          <xsl:otherwise>left</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_LOCATION_FOCUSED">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal' or $INSTITUTION='hc'">right</xsl:when>
-      <xsl:otherwise>left</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal' or $INSTITUTION='hc'">right</xsl:when>
+          <xsl:otherwise>left</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_LOCATION_GUEST">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal'">left</xsl:when>
-      <xsl:otherwise>left</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal'">left</xsl:when>
+          <xsl:otherwise>left</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_WIDTH">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal'">200</xsl:when>
-      <xsl:otherwise>200</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal'">200</xsl:when>
+          <xsl:otherwise>200</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_WIDTH_FOCUSED">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal'">200</xsl:when>
-      <xsl:otherwise>200</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal'">200</xsl:when>
+          <xsl:otherwise>200</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <xsl:param name="SIDEBAR_WIDTH_GUEST">
-    <xsl:choose>
-      <xsl:when test="$INSTITUTION='uportal'">250</xsl:when>
-      <xsl:otherwise>250</xsl:otherwise>
-    </xsl:choose>
+      <xsl:choose>
+          <xsl:when test="$INSTITUTION='uportal'">250</xsl:when>
+          <xsl:otherwise>250</xsl:otherwise>
+      </xsl:choose>
   </xsl:param>
 
   <!-- PAGE TITLE -->
@@ -360,7 +362,7 @@
   <xsl:param name="USE_BREADCRUMB">false</xsl:param> <!-- Sets the use of breadcrumb links.  Values are 'true' or 'false'. -->
 
   <!-- ****** PORTLET SETTINGS ****** -->
-  <!--
+  <!-- 
    | GREEN
    | Portlet Settings can be used to change aspects of the portlet chrome.
   -->
@@ -371,14 +373,14 @@
 
   <!-- Debug Template
   <xsl:template match="/">
-  	<h1>Debugging</h1>
-  	<div><textarea style="width:100em; height:75em;"><xsl:copy-of select="/"/></textarea></div>
+        <h1>Debugging</h1>
+        <div><textarea style="width:100em; height:75em;"><xsl:copy-of select="/"/></textarea></div>
   </xsl:template> -->
 
   <!-- =============================== -->
   <!-- ========== TEMPLATES ========== -->
   <!-- =============================== -->
-  <!--
+  <!-- 
    | GREEN
    | Templates included in this file are for the purpose of customizing the portal.
    | PAGE CSS and PAGE JAVASCRIPT are provided as a means to override the theme defaults.
@@ -393,20 +395,20 @@
 
   <!-- ========== TEMPLATE: ALERT BLOCK ========== -->
   <!-- ============================================ -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into an alert section at the very top of the page.
   -->
-  	<xsl:template name="alert.block">
-    	<!-- Fragment Administration mode banner and exit link. -->
-    	<xsl:copy-of select="//channel[@fname = 'fragment-admin-exit']"/>
-    </xsl:template>
-  <!-- ============================================ -->
+        <xsl:template name="alert.block">
+            <!-- Fragment Administration mode banner and exit link. -->
+            <xsl:copy-of select="//channel[@fname = 'fragment-admin-exit']"/>
+        </xsl:template>
+        <!-- ============================================ -->
 
 
-  <!-- ========== TEMPLATE: HEADER GUEST BLOCK ========== -->
-  <!-- ================================================== -->
-  <!--
+        <!-- ========== TEMPLATE: HEADER GUEST BLOCK ========== -->
+        <!-- ================================================== -->
+        <!-- 
    | GREEN
    | This template renders content into the page header.
    | Reordering the template calls and/or xhtml contents will change the order in the page markup.
@@ -414,106 +416,106 @@
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="header.guest.block">
-    <!-- Skip Navigation -->
-    <xsl:call-template name="skip.nav"/>
+      <!-- Skip Navigation -->
+      <xsl:call-template name="skip.nav"/>
 
-    <!-- Logo -->
-    <xsl:call-template name="logo"/>
+      <!-- Logo -->
+      <xsl:call-template name="logo"/>
 
-    <!-- Login -->
-    <xsl:call-template name="login"/>
-
-    <!-- Emergency Alert -->
-    <div id="portalHeaderBlock">
-      <xsl:copy-of select="//channel/parameter[@name = 'role' and @value = 'alert']/parent::*"/>
-    </div>
+      <!-- Login -->
+      <xsl:call-template name="login"/>
   </xsl:template>
   <!-- ================================================== -->
 
 
   <!-- ========== TEMPLATE: HEADER BLOCK ========== -->
   <!-- ============================================ -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page header.
    | Reordering the template calls and/or xhtml contents will change the order in the page markup.
    | Commenting out a template call will prevent that component's markup fom being written into the page markup.
    | Thus, to not use the quicklinks, simply comment out the quicklinks template call.
    | These components can be placed into other blocks, if desired.
-   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block
+   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block 
    | Custom content can be inserted as desired.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="header.block">
-  	<!-- Portal Page Bar -->
-    <xsl:call-template name="portal.page.bar"/>
+      <!-- Portal Page Bar -->
+      <xsl:call-template name="portal.page.bar"/>
 
-    <!-- Skip Navigation -->
-    <xsl:call-template name="skip.nav"/>
+      <!-- Skip Navigation -->
+      <xsl:call-template name="skip.nav"/>
 
-    <!-- Logo -->
-    <xsl:call-template name="logo"/>
+      <!-- Logo -->
+      <xsl:call-template name="logo"/>
 
-    <!-- Web Search -->
-    <xsl:call-template name="web.search"/>
+      <!-- Web Search -->
+      <xsl:call-template name="web.search"/>
 
-    <!-- Quicklinks
+      <!-- Quicklinks
     <xsl:call-template name="quicklinks"/> -->
 
     <!-- Emergency Alert -->
     <div id="portalHeaderBlock">
-      <xsl:copy-of select="//channel/parameter[@name = 'role' and @value = 'alert']/parent::*"/>
+        <xsl:copy-of select="//channel/parameter[@name = 'role' and @value = 'alert']/parent::*"/>
     </div>
-  </xsl:template>
-  <!-- ============================================ -->
+</xsl:template>
+<!-- ============================================ -->
 
 
   <!-- ========== TEMPLATE: PORTAL PAGE BAR TITLE BLOCK ========== -->
   <!-- =========================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the page bar title.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portal.page.bar.title.block">
-    <!-- Login Channel -->
-    <xsl:if test="$AUTHENTICATED='true'">
-    	<xsl:call-template name="welcome"/> <!-- This login call is needed to render the welcome/logout statement into the header. -->
-    </xsl:if>
-    <!-- Login Channel -->
+      <!-- Login Channel -->
+      <xsl:if test="$AUTHENTICATED='true'">
+          <xsl:call-template name="welcome"/> <!-- This login call is needed to render the welcome/logout statement into the header. -->
+      </xsl:if>
+      <!-- Login Channel -->
   </xsl:template>
   <!-- =========================================================== -->
 
 
   <!-- ========== TEMPLATE: PORTAL PAGE BAR LINKS BLOCK ========== -->
   <!-- =========================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the page bar title links.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portal.page.bar.links.block">
-  	<!-- Home Link -->
-  	<xsl:call-template name="portal.page.bar.link.home" />
-    <!-- Home Link -->
+      <!-- Home Link -->
+      <xsl:call-template name="portal.page.bar.link.home" />
+      <!-- Home Link -->
 
-    <!-- Admin Link -->
-    <xsl:if test="$INSTITUTION != 'uportal'">
-  		<xsl:call-template name="portal.page.bar.link.admin" />
-    </xsl:if>
-    <!-- Admin Link -->
+      <!-- Admin Link -->
+      <xsl:if test="$INSTITUTION != 'uportal'">
+          <xsl:call-template name="portal.page.bar.link.admin" />
+      </xsl:if>
+      <!-- Admin Link -->
 
-    <!-- Sitemap Link -->
-  	<xsl:call-template name="portal.page.bar.link.sitemap" />
-    <!-- Sitemap Link -->
+      <!-- Sitemap Link -->
+      <xsl:call-template name="portal.page.bar.link.sitemap" />
+      <!-- Sitemap Link -->
 
-    <!-- Help Link -->
-  	<xsl:call-template name="portal.page.bar.link.help" />
-    <!-- Help Link -->
+      <!-- Help Link -->
+      <xsl:call-template name="portal.page.bar.link.help" />
+      <!-- Help Link -->
 
-    <!-- Logout Link -->
-  	<xsl:call-template name="portal.page.bar.link.logout" />
-    <!-- Logout Link -->
+      <!-- Password Link -->
+      <!--
+      <xsl:call-template name="portal.page.bar.link.password"/>
+      -->
+
+      <!-- Logout Link -->
+      <xsl:call-template name="portal.page.bar.link.logout" />
+      <!-- Logout Link -->
 
   </xsl:template>
   <!-- =========================================================== -->
@@ -521,14 +523,14 @@
 
   <!-- ========== TEMPLATE: LOGO BLOCK ========== -->
   <!-- ========================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the logo.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="logo.block">
-  	<img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
-    <!-- Text only:
+      <img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
+      <!-- Text only: 
     <span><xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/></span> -->
   </xsl:template>
   <!-- ========================================== -->
@@ -536,44 +538,39 @@
 
   <!-- ========== TEMPLATE: HEADER FOCUSED BLOCK ========== -->
   <!-- ==================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content into the page header of the focused view.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="header.focused.block">
-    <!-- Portal Page Bar -->
-    <xsl:call-template name="portal.page.bar"/>
+      <!-- Portal Page Bar -->
+      <xsl:call-template name="portal.page.bar"/>
 
-    <!-- Skip Navigation -->
-    <xsl:call-template name="skip.nav"/>
+      <!-- Skip Navigation -->
+      <xsl:call-template name="skip.nav"/>
 
-    <!-- Logo -->
-    <xsl:call-template name="logo"/>
+      <!-- Logo -->
+      <xsl:call-template name="logo"/>
 
-    <!-- SAMPLE:
+      <!-- SAMPLE:
     <div id="portalHeaderFocusedBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
-
-    <!-- Emergency Alert -->
-    <div id="portalHeaderBlock">
-      <xsl:copy-of select="//channel/parameter[@name = 'role' and @value = 'alert']/parent::*"/>
-    </div>
   </xsl:template>
   <!-- ==================================================== -->
 
 
   <!-- ========== TEMPLATE: PORTAL PAGE BAR TITLE FOCUSED BLOCK ========== -->
   <!-- =================================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the page bar title of the focused view.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portal.page.bar.title.focused.block">
-  	<!-- Text:
+      <!-- Text:
     <span><xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/></span> -->
   </xsl:template>
   <!-- =================================================================== -->
@@ -581,45 +578,45 @@
 
   <!-- ========== TEMPLATE: PORTAL PAGE BAR LINKS FOCUSED BLOCK ========== -->
   <!-- =================================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the page bar title links of the focused view.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portal.page.bar.links.focused.block">
-  	<!-- Home Link -->
-  	<xsl:call-template name="portal.page.bar.link.home"/>
-    <!-- Home Link -->
+      <!-- Home Link -->
+      <xsl:call-template name="portal.page.bar.link.home"/>
+      <!-- Home Link -->
 
-    <!-- Admin Link
-  	<xsl:call-template name="portal.page.bar.link.admin"/> -->
+      <!-- Admin Link
+        <xsl:call-template name="portal.page.bar.link.admin"/> -->
     <!-- Admin Link -->
 
     <!-- Sitemap Link
-  	<xsl:call-template name="portal.page.bar.link.sitemap"/> -->
+        <xsl:call-template name="portal.page.bar.link.sitemap"/> -->
     <!-- Sitemap Link -->
 
     <!-- Help Link -->
-  	<xsl:call-template name="portal.page.bar.link.help" />
+    <xsl:call-template name="portal.page.bar.link.help" />
     <!-- Help Link -->
 
     <!-- Logout Link -->
-  	<xsl:call-template name="portal.page.bar.link.logout" />
+    <xsl:call-template name="portal.page.bar.link.logout" />
     <!-- Logout Link -->
-  </xsl:template>
-  <!-- =================================================================== -->
+</xsl:template>
+<!-- =================================================================== -->
 
 
   <!-- ========== TEMPLATE: FOCUSED LOGO BLOCK ========== -->
   <!-- ================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content for the focused logo.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="logo.focused.block">
-  	<img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
-  	<!-- Text:
+      <img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
+      <!-- Text:
     <span><xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/></span> -->
     <!-- Slim version of logo:
     <img src="{$SKIN_PATH}/images/portal_logo_slim.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>  -->
@@ -629,55 +626,55 @@
 
   <!-- ========== TEMPLATE: MAIN NAVIGATION BLOCK ========== -->
   <!-- ================================================= -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders the navigation as tabs in below the header and above the body.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="main.navigation.block">
-  	<!-- Main Navigation -->
-    <xsl:if test="$TAB_CONTEXT = 'header'">
-        <xsl:apply-templates select="//navigation">
-          <xsl:with-param name="CONTEXT" select="'header'"/>
-        </xsl:apply-templates>
-    </xsl:if>
-    <!-- Main Navigation -->
+      <!-- Main Navigation -->
+      <xsl:if test="$TAB_CONTEXT = 'header'">
+          <xsl:apply-templates select="//navigation">
+              <xsl:with-param name="CONTEXT" select="'header'"/>
+          </xsl:apply-templates>
+      </xsl:if>
+      <!-- Main Navigation -->
   </xsl:template>
   <!-- ================================================= -->
 
 
   <!-- ========== TEMPLATE: CONTENT TOP BLOCK ========== -->
   <!-- ================================================= -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content into the page above the body.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.top.block">
-  	<!-- SAMPLE:
+      <!-- SAMPLE:
     <div id="portalContentTopBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
     <!-- Tips -->
     <div id="portalContentTopBlock">
         <xsl:copy-of select="//channel/parameter[@name = 'role' and @value = 'tips']/parent::*"/>
     </div>
-  </xsl:template>
-  <!-- ================================================= -->
+</xsl:template>
+<!-- ================================================= -->
 
 
   <!-- ========== TEMPLATE: CONTENT BOTTOM BLOCK ========== -->
   <!-- ==================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content into the page below the body.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.bottom.block">
-  	<!-- SAMPLE:
+      <!-- SAMPLE:
     <div id="portalContentBottomBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
   </xsl:template>
@@ -685,30 +682,30 @@
 
   <!-- ==== TEMPLATE: CONTENT CUSTOMIZE MESSAGE BLOCK ==== -->
   <!-- =================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the top row of the content layout table.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.customize.message.block">
-    <xsl:call-template name="page.customize.message"/>
+      <xsl:call-template name="page.customize.message"/>
   </xsl:template>
   <!-- =================================================== -->
 
   <!-- ========== TEMPLATE: CONTENT TITLE BLOCK ========== -->
   <!-- =================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the top row of the content layout table.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.title.block">
 
-  	<!-- PAGE TITLE -->
-  	<xsl:if test="$USE_PAGE_TITLE = 'true'">
-    	<xsl:call-template name="page.title"/>
-    </xsl:if>
-    <!-- PAGE TITLE -->
+      <!-- PAGE TITLE -->
+      <xsl:if test="$USE_PAGE_TITLE = 'true'">
+          <xsl:call-template name="page.title"/>
+      </xsl:if>
+      <!-- PAGE TITLE -->
 
   </xsl:template>
   <!-- =================================================== -->
@@ -716,30 +713,30 @@
 
   <!-- ========== TEMPLATE: CONTENT TITLE FOCUSED BLOCK ========== -->
   <!-- =========================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the top row of the content layout table of the focused view.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.title.focused.block">
-  	<!-- BREADCRUMB -->
-  	<xsl:if test="$USE_BREADCRUMB = 'true'">
-    	<xsl:call-template name="breadcrumb"/>
-    </xsl:if>
-    <!-- BREADCRUMB -->
+      <!-- BREADCRUMB -->
+      <xsl:if test="$USE_BREADCRUMB = 'true'">
+          <xsl:call-template name="breadcrumb"/>
+      </xsl:if>
+      <!-- BREADCRUMB -->
 
-    <!-- PAGE TITLE -->
-    <xsl:if test="$USE_PAGE_TITLE = 'true'">
-    	<xsl:call-template name="page.title"/>
-    </xsl:if>
-    <!-- PAGE TITLE -->
+      <!-- PAGE TITLE -->
+      <xsl:if test="$USE_PAGE_TITLE = 'true'">
+          <xsl:call-template name="page.title"/>
+      </xsl:if>
+      <!-- PAGE TITLE -->
   </xsl:template>
   <!-- =========================================================== -->
 
 
   <!-- ========== TEMPLATE: CONTENT SIDEBAR BLOCK ========== -->
   <!-- ================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the sidebar of the content layout.
    | The sidebar must be enabled for this content to render.
@@ -748,21 +745,21 @@
    | Commenting out a template call will prevent that component's markup fom being written into the page markup.
    | Thus, to not use the quicklinks, simply comment out the quicklinks template call.
    | These components can be placed into other blocks, if desired.
-   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block
+   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block 
    | Custom content can be inserted as desired.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.sidebar.block">
-    <!-- Web Search
+      <!-- Web Search
     <xsl:call-template name="web.search"/> -->
     <!-- Web Search -->
 
     <!-- Main Navigation-->
     <xsl:if test="$TAB_CONTEXT = 'sidebar'">
         <xsl:apply-templates select="//navigation">
-          <xsl:with-param name="CONTEXT" select="'sidebar'"/>
+            <xsl:with-param name="CONTEXT" select="'sidebar'"/>
         </xsl:apply-templates>
-    </xsl:if>
+    </xsl:if> 
     <!-- Main Navigation -->
 
     <!-- Quicklinks -->
@@ -777,13 +774,9 @@
     <xsl:copy-of select="//channel[@fname = 'fragment-admin']"/>
     <!--<xsl:copy-of select="//channel[@fname = 'fragment-admin-exit']"/>-->
 
-    <!-- Links from DLM content whith type='sidebar' -->
-    <xsl:call-template name="dlm.sidebar.links"/>
-    <!-- Links from DLM content whith type='sidebar' -->
-
     <!-- SAMPLE:
     <div id="portalContentSidebarsBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
   </xsl:template>
@@ -792,7 +785,7 @@
 
   <!-- ========== TEMPLATE: CONTENT SIDEBAR FOCUSED BLOCK ========== -->
   <!-- ========================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the sidebar of the content layout when a portlet is focused.
    | The sidebar must be enabled for this content to render.
@@ -802,7 +795,7 @@
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.sidebar.focused.block">
-    <!-- Main Navigation
+      <!-- Main Navigation
     <xsl:if test="$TAB_CONTEXT = 'sidebar'">
         <xsl:apply-templates select="//navigation">
           <xsl:with-param name="CONTEXT" select="'focused'"/>
@@ -816,7 +809,7 @@
 
     <!-- SAMPLE:
     <div id="portalContentSidebarFocusedBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
   </xsl:template>
@@ -825,7 +818,7 @@
 
   <!-- ========== TEMPLATE: CONTENT SIDEBAR GUEST BLOCK ========== -->
   <!-- ======================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders content into the page body in the sidebar of the content layout when not logged in.
    | The sidebar must be enabled for this content to render.
@@ -834,13 +827,13 @@
    | Commenting out a template call will prevent that component's markup fom being written into the page markup.
    | Thus, to not use the quicklinks, simply comment out the quicklinks template call.
    | These components can be placed into other blocks, if desired.
-   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block
+   | To place a component into another block, copy the template call from this block and paste it into another block; then comment out the template call in this block 
    | Custom content can be inserted as desired.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="content.sidebar.guest.block">
-		<!-- ****** LOGIN ****** -->
-    <!--
+      <!-- ****** LOGIN ****** -->
+      <!--
      | Use one of the login options: the login template (uP3 preferred), the login channel (from uP2.6), or CAS login.
     -->
     <!-- Login
@@ -864,7 +857,7 @@
     <xsl:call-template name="quicklinks"/> -->
     <!-- Quicklinks -->
 
-    <!-- Main Navigation
+    <!-- Main Navigation 
     <xsl:if test="$TAB_CONTEXT = 'sidebar'">
         <xsl:apply-templates select="//navigation">
           <xsl:with-param name="CONTEXT" select="'sidebar'"/>
@@ -874,7 +867,7 @@
 
     <!-- SAMPLE:
     <div id="portalContentSidebarGuestBlock">
-    	<p>CUSTOM CONTENTS.</p>
+        <p>CUSTOM CONTENTS.</p>
     </div>
     -->
   </xsl:template>
@@ -883,17 +876,17 @@
 
   <!-- ========== TEMPLATE: FOOTER BLOCK ========== -->
   <!-- ============================================ -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content into the page footer.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="footer.block">
 
-    <!-- Site Map -->
-    <div id="portalPageFooterNav">
-        <a name="sitemap"></a>
-        <!--
+      <!-- Site Map -->
+      <div id="portalPageFooterNav">
+          <a name="sitemap"></a>
+          <!-- 
          | Tab layout:
          | Tab1          Tab2          Tab3          Tab4         (<== limited to $TAB_WRAP_COUNT)
          |   -portlet1     -portlet5     -portlet7     -portlet8
@@ -908,146 +901,167 @@
 
         <!-- Here we can't use muenchian grouping, because due to some bug key ignores "match" argument, hence calculations using position() are unusable -->
         <xsl:for-each select="//navigation/tab">
-          <xsl:if test="(position() mod $TAB_WRAP_COUNT)=1">
-            <xsl:variable name="ROW_NUM" select="ceiling(position() div $TAB_WRAP_COUNT)" />
-            <div class="fl-container-flex fl-col-flex4">
-              <xsl:for-each select="//navigation/tab">
-                <xsl:if test="ceiling(position() div $TAB_WRAP_COUNT) = $ROW_NUM">
-                    <xsl:variable name="tabLinkUrl">
-                      <xsl:call-template name="portalUrl">
-                        <xsl:with-param name="url">
-                          <url:portal-url>
-                            <url:layoutId><xsl:value-of select="@ID" /></url:layoutId>
-                          </url:portal-url>
-                        </xsl:with-param>
-                      </xsl:call-template>
-                    </xsl:variable>
-                    <div class="fl-col">
-                      <div><a href="{$tabLinkUrl}"><xsl:value-of select="upElemTitle:getTitle(@ID, $USER_LANG, @name)"/></a></div>
-                      <ul>
-                          <xsl:for-each select="tabChannel">
-                            <xsl:variable name="portletLinkUrl">
-                              <xsl:call-template name="portalUrl">
-                                <xsl:with-param name="url">
-                                  <url:portal-url>
-                                    <url:layoutId><xsl:value-of select="@ID" /></url:layoutId>
-                                    <url:portlet-url state="MAXIMIZED" />
-                                  </url:portal-url>
-                                </xsl:with-param>
-                              </xsl:call-template>
+            <xsl:if test="(position() mod $TAB_WRAP_COUNT)=1">
+                <xsl:variable name="ROW_NUM" select="ceiling(position() div $TAB_WRAP_COUNT)" />
+                <div class="fl-container-flex fl-col-flex4">
+                    <xsl:for-each select="//navigation/tab">
+                        <xsl:if test="ceiling(position() div $TAB_WRAP_COUNT) = $ROW_NUM">
+                            <xsl:variable name="tabLinkUrl">
+                                <xsl:call-template name="portalUrl">
+                                    <xsl:with-param name="url">
+                                        <url:portal-url>
+                                            <url:layoutId><xsl:value-of select="@ID" /></url:layoutId>
+                                        </url:portal-url>
+                                    </xsl:with-param>
+                                </xsl:call-template>
                             </xsl:variable>
-                            <li><xsl:element name="a">
-                                <xsl:choose>
-                                  <xsl:when test="@alternativeMaximixedLink and string-length(@alternativeMaximixedLink) > 0">
-                                    <xsl:attribute name="href"><xsl:value-of select="@alternativeMaximixedLink" /></xsl:attribute>
-                                    <xsl:attribute name="target">_blank</xsl:attribute>
-                                    <xsl:attribute name="class">externalLink</xsl:attribute>
-                                  </xsl:when>
-                                  <xsl:otherwise>
-                                    <xsl:attribute name="href"><xsl:value-of select="$portletLinkUrl" /></xsl:attribute>
-                                  </xsl:otherwise>
-                                </xsl:choose>
-                                <xsl:value-of select="@name" />
-                              </xsl:element></li>
-                        </xsl:for-each>
-                      </ul>
-                    </div>
-                </xsl:if>
-              </xsl:for-each>
-            </div>
-          </xsl:if>
+                            <div class="fl-col">
+                                <div><a href="{$tabLinkUrl}"><xsl:value-of select="upElemTitle:getTitle(@ID, $USER_LANG, @name)"/></a></div>
+                                <ul>
+                                    <xsl:for-each select="tabChannel">
+                                        <xsl:variable name="portletLinkUrl">
+                                            <xsl:choose>
+                                                <xsl:when test="parent::tab[@canadianModeEmulation='true']">
+                                                    <!-- on canadianModeEmulation show normal portlet -->
+                                                    <xsl:call-template name="portalUrl">
+                                                        <xsl:with-param name="url">
+                                                            <url:portal-url>
+                                                                <url:layoutId><xsl:value-of select="@ID"/></url:layoutId>
+                                                                <url:portlet-url state="NORMAL"/>
+                                                            </url:portal-url>
+                                                        </xsl:with-param>
+                                                    </xsl:call-template>
+                                                </xsl:when>
+                                                <xsl:when test="$subNavigationLinkAsAnchor='true'">
+                                                    <!-- otherwise show full layout -->
+                                                    <xsl:variable name="tmpPortletLinkUrl">
+                                                        <xsl:call-template name="portalUrl">
+                                                            <xsl:with-param name="url">
+                                                                <url:portal-url>
+                                                                    <url:layoutId><xsl:value-of select="parent::tab/@ID"/></url:layoutId>
+                                                                </url:portal-url>
+                                                            </xsl:with-param>
+                                                        </xsl:call-template>
+                                                    </xsl:variable>
+                                                    <xsl:value-of select="concat($tmpPortletLinkUrl,'#portlet_',@ID)"/>
+                                                </xsl:when>
+                                                <xsl:otherwise> <!-- normal behavior -->
+                                                    <xsl:call-template name="portalUrl">
+                                                        <xsl:with-param name="url">
+                                                            <url:portal-url>
+                                                                <url:layoutId><xsl:value-of select="@ID" /></url:layoutId>
+                                                                <url:portlet-url state="MAXIMIZED" />
+                                                            </url:portal-url>
+                                                        </xsl:with-param>
+                                                    </xsl:call-template>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:variable>
+                                        <li><a href="{$portletLinkUrl}"><xsl:value-of select="@name" /></a></li>
+                                    </xsl:for-each>                      
+                                </ul>
+                            </div>
+                        </xsl:if>
+                    </xsl:for-each>
+                </div>
+            </xsl:if>
         </xsl:for-each>
-    </div>
+    </div> 
 
     <xsl:if test="$INSTITUTION='uportal' or $INSTITUTION='coal' or $INSTITUTION='ivy' or $INSTITUTION='hc'">
-			<div id="portalPageFooterContent">
-      <!-- Footer Links -->
-      	<div id="portalPageFooterLinks">
-	        <a href="http://www.jasig.org/" target="_blank" title="{upMsg:getMessage('go.to.jasig.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('jasig.org', $USER_LANG)"/>
-	          <!--<xsl:value-of select="jasig.org"/>-->
-	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal" target="_blank" title="{upMsg:getMessage('go.to.uportal.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.org', $USER_LANG)"/>
-	          <!--<xsl:value-of select="uportal.org"/>-->
-	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/download" target="_blank" title="{upMsg:getMessage('go.to.uportal.download.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('download.uportal', $USER_LANG)"/>
-	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/community" target="_blank" title="{upMsg:getMessage('go.to.uportal.community.page', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.community', $USER_LANG)"/>
-	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/privacy" target="_blank" title="{upMsg:getMessage('view.uportal.privacy.policy', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('privacy.policy', $USER_LANG)"/>
-	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/accessibility" target="_blank" title="{upMsg:getMessage('view.uportal.accessibility.information', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.accessibility', $USER_LANG)"/>
-	        </a>
-	      </div>
+        <div id="portalPageFooterContent">
+            <!-- Footer Links -->
+            <div id="portalPageFooterLinks">
+                <a href="http://www.jasig.org/" target="_blank" title="{upMsg:getMessage('go.to.jasig.site', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('jasig.org', $USER_LANG)"/>
+                    <!--<xsl:value-of select="jasig.org"/>-->
+                </a>
+                <xsl:call-template name="portal.pipe"/>
+                <a href="http://www.jasig.org/uportal" target="_blank" title="{upMsg:getMessage('go.to.uportal.site', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('uportal.org', $USER_LANG)"/>
+                    <!--<xsl:value-of select="uportal.org"/>-->
+                </a>
+                <xsl:call-template name="portal.pipe"/>
+                <a href="http://www.jasig.org/uportal/download" target="_blank" title="{upMsg:getMessage('go.to.uportal.download.site', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('download.uportal', $USER_LANG)"/>
+                </a>
+                <xsl:call-template name="portal.pipe"/>
+                <a href="http://www.jasig.org/uportal/community" target="_blank" title="{upMsg:getMessage('go.to.uportal.community.page', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('uportal.community', $USER_LANG)"/>
+                </a>
+                <xsl:call-template name="portal.pipe"/>
+                <a href="http://www.jasig.org/uportal/privacy" target="_blank" title="{upMsg:getMessage('view.uportal.privacy.policy', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('privacy.policy', $USER_LANG)"/>
+                </a>
+                <xsl:call-template name="portal.pipe"/>
+                <a href="http://www.jasig.org/uportal/accessibility" target="_blank" title="{upMsg:getMessage('view.uportal.accessibility.information', $USER_LANG)}">
+                    <xsl:value-of select="upMsg:getMessage('uportal.accessibility', $USER_LANG)"/>
+                </a>
+                <!-- ofranco disable -->
+                <!-- 
+                <xsl:call-template name="portal.pipe"/>
+                <span><xsl:value-of select="$targetChannelID"/></span>
+                -->
+              </div>
 
-	      <!-- uPortal Product Version -->
-	      <div id="portalProductAndVersion">
-	        <p>
-                <a href="http://www.jasig.org/uportal" title="{upMsg:getMessage('footer.uportal.powered.by', $USER_LANG)} {$UP_VERSION}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.uportal.powered.by', $USER_LANG)"/><xsl:value-of select="$UP_VERSION"/></a><xsl:value-of select="upMsg:getMessage('footer.open.source', $USER_LANG)"/><a href="http://www.jasig.org" title="Jasig.org - Open for Higher Education">Jasig</a> - <span><xsl:value-of select="$SERVER_NAME"/></span>
-                <xsl:if test="$AUTHENTICATED='true'">
-                    <br/>
-                    <chunk-point/> <!-- Performance Optimization, see ChunkPointPlaceholderEventSource -->
-                    <span><xsl:value-of select="upMsg:getMessage('footer.session.key', $USER_LANG)"/></span><span><xsl:value-of select="$STATS_SESSION_ID"/></span>
-                    <chunk-point/> <!-- Performance Optimization, see ChunkPointPlaceholderEventSource -->
-                </xsl:if>
-            </p>
-	        <!-- It's a good idea to leave this in the markup, that way anyone who may be supporting your portal can get to this information quickly by simply using a browser.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
-	      </div>
+              <!-- uPortal Product Version -->
+              <div id="portalProductAndVersion">
+                  <p>
+                      <a href="http://www.jasig.org/uportal" title="{upMsg:getMessage('footer.uportal.powered.by', $USER_LANG)} {$UP_VERSION}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.uportal.powered.by', $USER_LANG)"/><xsl:value-of select="$UP_VERSION"/></a><xsl:value-of select="upMsg:getMessage('footer.open.source', $USER_LANG)"/><a href="http://www.jasig.org" title="Jasig.org - Open for Higher Education">Jasig</a> - <span><xsl:value-of select="$SERVER_NAME"/></span>
+                      <xsl:if test="$AUTHENTICATED='true'">
+                          <br/>
+                          <chunk-point/> <!-- Performance Optimization, see ChunkPointPlaceholderEventSource -->
+                          <span><xsl:value-of select="upMsg:getMessage('footer.session.key', $USER_LANG)"/></span><span><xsl:value-of select="$STATS_SESSION_ID"/></span>
+                          <chunk-point/> <!-- Performance Optimization, see ChunkPointPlaceholderEventSource -->
+                      </xsl:if>
+                  </p>
+                  <!-- It's a good idea to leave this in the markup, that way anyone who may be supporting your portal can get to this information quickly by simply using a browser.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
+              </div>
 
-	      <!-- Copyright -->
-	      <div id="portalCopyright">
-	        <p><a href="http://www.jasig.org/uportal/about/license" title="uPortal" target="_blank">uPortal </a><xsl:value-of select="upMsg:getMessage('footer.uportal.licensed', $USER_LANG)"/><a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License, Version 2.0" target="_blank">Apache License, Version 2.0 </a> <xsl:value-of select="upMsg:getMessage('footer.license.approvment', $USER_LANG)"/><a href="http://www.opensource.org/docs/osd" title="{upMsg:getMessage('footer.osi', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.osi', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.open.license', $USER_LANG)"/><a href="http://www.gnu.org/licenses/license-list.html" title="{upMsg:getMessage('footer.gnu', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.gnu', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.free.license', $USER_LANG)"/></p>
-	      </div>
+              <!-- Copyright -->
+              <div id="portalCopyright">
+                  <p><a href="http://www.jasig.org/uportal/about/license" title="uPortal" target="_blank">uPortal </a><xsl:value-of select="upMsg:getMessage('footer.uportal.licensed', $USER_LANG)"/><a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License, Version 2.0" target="_blank">Apache License, Version 2.0 </a> <xsl:value-of select="upMsg:getMessage('footer.license.approvment', $USER_LANG)"/><a href="http://www.opensource.org/docs/osd" title="{upMsg:getMessage('footer.osi', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.osi', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.open.license', $USER_LANG)"/><a href="http://www.gnu.org/licenses/license-list.html" title="{upMsg:getMessage('footer.gnu', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.gnu', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.free.license', $USER_LANG)"/></p>
+              </div>
 
-	      <!-- Icon Set Attribution -->
-	      <div id="silkIconsAttribution">
-	        <p><a href="http://www.famfamfam.com/lab/icons/silk/" title="{upMsg:getMessage('footer.icon.set', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.icon.set', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.icon.set.author', $USER_LANG)"/></p>
-	        <!-- Silk icon set 1.3 by Mark James [ http://www.famfamfam.com/lab/icons/silk/ ], which is licensed under a Creative Commons Attribution 2.5 License. [ http://creativecommons.org/licenses/by/2.5/ ].  This icon set is free for use under the CCA 2.5 license, so long as there is a link back to the author's site.  If the Silk icons are used, this reference must be present in the markup, though not necessarily visible in the rendered page.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
-	      </div>
-    	</div>
-    </xsl:if>
+              <!-- Icon Set Attribution -->
+              <div id="silkIconsAttribution">
+                  <p><a href="http://www.famfamfam.com/lab/icons/silk/" title="{upMsg:getMessage('footer.icon.set', $USER_LANG)}" target="_blank"><xsl:value-of select="upMsg:getMessage('footer.icon.set', $USER_LANG)"/> </a><xsl:value-of select="upMsg:getMessage('footer.icon.set.author', $USER_LANG)"/></p>
+                  <!-- Silk icon set 1.3 by Mark James [ http://www.famfamfam.com/lab/icons/silk/ ], which is licensed under a Creative Commons Attribution 2.5 License. [ http://creativecommons.org/licenses/by/2.5/ ].  This icon set is free for use under the CCA 2.5 license, so long as there is a link back to the author's site.  If the Silk icons are used, this reference must be present in the markup, though not necessarily visible in the rendered page.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
+              </div>
+          </div>
+      </xsl:if>
 
   </xsl:template>
   <!-- ============================================ -->
 
   <!-- ========== TEMPLATE: PORTLET TOP BLOCK ========== -->
   <!-- ================================================= -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content on the portlet container top for additional decoration, primarily for rounded corners.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portlet.top.block">
-    <div class="up-portlet-wrapper-top">
-      <div class="up-portlet-wrapper-top-inner">
+      <div class="up-portlet-wrapper-top">
+          <div class="up-portlet-wrapper-top-inner">
+          </div>
       </div>
-    </div>
   </xsl:template>
   <!-- ================================================= -->
 
 
   <!-- ========== TEMPLATE: PORTLET BOTTOM BLOCK ========== -->
   <!-- ==================================================== -->
-  <!--
+  <!-- 
    | GREEN
    | This template renders custom content on the portlet container bottom for additional decoration, primarily for rounded corners.
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="portlet.bottom.block">
-    <div class="up-portlet-wrapper-bottom">
-      <div class="up-portlet-wrapper-bottom-inner">
+      <div class="up-portlet-wrapper-bottom">
+          <div class="up-portlet-wrapper-bottom-inner">
+          </div>
       </div>
-    </div>
   </xsl:template>
   <!-- ==================================================== -->
 

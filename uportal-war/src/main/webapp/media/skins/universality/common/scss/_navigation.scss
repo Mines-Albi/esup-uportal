@@ -173,6 +173,28 @@
 				background: $navRemoveTabImage;
 			}
 		}
+		/* canadian mode subnavigation */
+		#portalNavigationSubrow {
+			.portal-subnav-list { 
+				margin: 0 2em; 
+			  .active {
+					background: none!important;
+				}
+			}
+			a.portal-subnav-link { 
+				text-decoration: none; 
+				.portal-subnav-label {
+					color: white;
+					font-weight: bold;
+				}
+				.portal-subnav-label:hover {
+					border-bottom: 2px solid $navTabActiveHoverLink;
+				}
+			}
+			.active .portal-subnav-link .portal-subnav-label { 
+				border-bottom: 2px solid $navTabActiveHoverLink; 
+			}
+		}
 	}
 	
 	#portalSidebar {
