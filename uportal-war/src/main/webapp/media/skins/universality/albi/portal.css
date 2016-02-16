@@ -939,6 +939,17 @@
   color: #8f8f8f;
 }
 
+
+#Place code in your theme directory /uportal-war/src/main/webapp/media/skins/universality/<your theme>/portal.css
+#Code below will need to be revised to reflect your theme color scheme
+ 
+#portalNavigationTabGroup{background:#006b67 url('images/bg_menu_v2.gif') repeat-x top left;padding:0 22px;}
+#portalNavigationTabGroupsList{margin:0;padding:0;}
+#portalNavigationTabGroupsList li{display:inline-block;border-right:1px solid #475454;list-style-type:none;}
+#portalNavigationTabGroupsList li:hover, #portalNavigationTabGroupsList .tabGroupListActive {background:#ececec url('images/bg_menu_sel_v2.gif') repeat-x top left;}
+#portalNavigationTabGroupsList li:hover a, #portalNavigationTabGroupsList .tabGroupListActive a{color:#000;}
+#portalNavigationTabGroupsList a{color:#fff;text-decoration:none;font-size:14px; padding: 5px 15px; float:left;}
+
 /* 
 ------------------------------------
   uPortal Gallery.

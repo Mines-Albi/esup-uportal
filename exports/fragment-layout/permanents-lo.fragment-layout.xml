@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     fragment-layout pour les permannets mines-albi
+     version 15/02/2016
+-->
+<layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="sosinfo-lo">
+    <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+        <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+            <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+        </folder>
+        <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+
+        <folder ID="s11" hidden="false" immutable="false" name="Le calendrier 11" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Accueil</value>
+            </structure-attribute>
+            <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n111"/>
+        </folder>
+        <folder ID="s12" hidden="false" immutable="false" name="Le temps 12" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Accueil</value>
+            </structure-attribute>
+            <channel fname="weather" unremovable="false" hidden="false" immutable="false" ID="n121"/>
+        </folder>
+
+        <folder ID="s21" hidden="false" immutable="false" name="Le xkcd 21" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Pilotage</value>
+            </structure-attribute>
+            <channel fname="xkcd" unremovable="false" hidden="false" immutable="false" ID="n211"/>
+        </folder>
+        <folder ID="s22" hidden="false" immutable="false" name="Les jasig-news 22" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Pilotage</value>
+            </structure-attribute>
+            <channel fname="jasig-news" unremovable="false" hidden="false" immutable="false" ID="n221"/>
+        </folder>
+
+        <folder ID="s31" hidden="false" immutable="false" name="Liens uportal" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Opérationnel</value>
+            </structure-attribute>
+            <channel fname="uportal-links" unremovable="false" hidden="false" immutable="false" ID="n311"/>
+        </folder>
+        <folder ID="s32" hidden="false" immutable="false" name="Les jasig-news 22" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Opérationnel</value>
+            </structure-attribute>
+            <channel fname="jasig-news" unremovable="false" hidden="false" immutable="false" ID="n321"/>
+        </folder>
+
+        <folder ID="s41" hidden="false" immutable="false" name="Démonstration js-demo 41" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Ambassadeurs</value>
+            </structure-attribute>
+            <channel fname="js-demo" unremovable="false" hidden="false" immutable="false" ID="n411"/>
+        </folder>
+        <folder ID="s42" hidden="false" immutable="false" name="Les jasig-news 22" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Ambassadeurs</value>
+            </structure-attribute>
+            <channel fname="jasig-news" unremovable="false" hidden="false" immutable="false" ID="n421"/>
+        </folder>
+
+        <folder ID="s51" hidden="false" immutable="false" name="Le xkcd 21" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Outils</value>
+            </structure-attribute>
+            <channel fname="xkcd" unremovable="false" hidden="false" immutable="false" ID="n511"/>
+        </folder>
+        <folder ID="s52" hidden="false" immutable="false" name="Les jasig-news 22" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Outils</value>
+            </structure-attribute>
+            <channel fname="jasig-news" unremovable="false" hidden="false" immutable="false" ID="n521"/>
+        </folder>
+
+        <folder ID="s61" hidden="false" immutable="false" name="Le xkcd 21" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Mon dossier</value>
+            </structure-attribute>
+            <channel fname="xkcd" unremovable="false" hidden="false" immutable="false" ID="n611"/>
+        </folder>
+        <folder ID="s62" hidden="false" immutable="false" name="Les jasig-news 22" type="regular" unremovable="false">
+            <structure-attribute type="folder">
+                <name>tabGroup</name>
+                <value>Mon dossier</value>
+            </structure-attribute>
+            <channel fname="jasig-news" unremovable="false" hidden="false" immutable="false" ID="n621"/>
+        </folder>
+
+    </folder>
+</layout>
