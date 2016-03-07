@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><profile script="classpath://org/jasig/portal/io/import-profile_v3-2.crn" username="lemaillo">
+  <name>HTML mobile browser profile</name>
+  <fname>mobileDefault</fname>
+  <description>A sample mobile profile for common web browsers</description>
+  <structure name="DLMMobileColumns"/>
+  <theme name="UniversalityMobile"/>
+</profile>

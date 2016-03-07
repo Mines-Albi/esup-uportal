@@ -10,7 +10,6 @@
         <ns2:webAppName>/Announcements</ns2:webAppName>
         <ns2:portletName>AnnouncementsDisplay</ns2:portletName>
     </portlet-descriptor>
-    <category>All categories</category>
     <group>Authenticated Users</group>
     <parameter>
         <name>alternate</name>
@@ -52,11 +51,6 @@
         <name>showChrome</name>
         <value>true</value>
     </parameter>
-    <portlet-preference>
-        <name>AnnouncementPreferences.filterItems</name>
-        <readOnly>false</readOnly>
-        <value></value>
-    </portlet-preference>
     <portlet-preference>
         <name>AnnouncementPreferences.filterType</name>
         <readOnly>false</readOnly>

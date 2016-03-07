@@ -1,0 +1,65 @@
+Comment ajouter un portlet
+--------------------------
+
+cd uportal-portlets-overlay
+git clone https://github.com/EsupPortail/esup-filemanager.git
+cd esup-filemanager
+mvn install
+cd ../..
+ant deployPortletApp -DportletApp=uportal-portlets-overlay/esup-filemanager/target/esup-filemanager.war
+
+Comment créer un layout (ensemble d'onglets et de contenus) affecté à un groupe d'utilisateurs
+----------------------------------------------------------------------------------------------
+
+1. Il faut un pseudo-user pour etre propriétaire du "fragment layout".
+On le nomme nom_du_groupe-lo ( lo = layout )
+
+exports/user/sosinfo-lo.user.xml
+<user username="sosinfo-lo" version="4.0">
+    <default-user>defaultTemplateUser</default-user>
+    <attribute>
+        <name>givenName</name>
+        <value>permanents</value>
+    </attribute>
+    <attribute>
+        <name>sn</name>
+        <value>Layout Owner</value>
+    </attribute>
+</user>
+
+2. Ce pseudo-user a un "profile" d'affichage (mobile, desktop,....) qui déclenchera un thème ?
+pas forcément indispensable ?
+
+exports/profile/sosinfo-lo_default.profile.xml
+<profile username="sosinfo-lo">
+<?xml version="1.0" encoding="UTF-8"?><profile script="classpath://org/jasig/portal/io/import-profile_v3-2.crn" username="sosinfo-lo">
+  <name>HTML browser profile</name>
+  <fname>default</fname>
+  <description>A sample profile for common web browsers</description>
+  <structure name="DLMTabsColumns"/>
+  <theme name="DLMXHTML"/>
+</profile>
+
+3. Ce pseudo-user DOIT etre repertorié comme "possesseur de fragment" (fragment owner)
+
+dans exports/group-membership/Fragment_Owners.group-membership.xml:
+<literal>sosinfo-lo</literal>
+
+
+4. Il faut créer un "fragment defintion" dont le propriétaire sera le pseudo-user (ici sosinfo-lo)
+et qui inclut un sélecteur d'audience basé sur l'appartenance à un groupe LDAP.
+
+exports/fragment-definition/sosinfo.fragment-definition.xml
+<dlm:fragment name="sosinfo" ownerID="sosinfo-lo" precedence="40.0">
+    <dlm:audience evaluatorFactory="org.jasig.portal.layout.dlm.providers.GroupMembershipEvaluatorFactory">
+      <paren mode="OR">
+        <attribute mode="deepMemberOf" name="sosinfo"/>
+      </paren>
+    </dlm:audience>
+  </dlm:fragment>
+</fragment-definition>
+
+5. On peut enfin créer un "fragment layout" dont le username sera le meme pseudo-user (ici sosinfo-lo)
+
+exports/fragment-layout/sosinfo-lo.fragment-layout.xml:
+<layout username="sosinfo-lo">

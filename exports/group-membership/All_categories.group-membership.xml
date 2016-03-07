@@ -4,10 +4,11 @@
   <creator>system</creator>
   <description>Toutes les catégories de portlets</description>
   <children>
+    <group>Acteurs</group>
     <group>Actualités</group>
     <group>Administration</group>
+    <group>Ambassadeurs</group>
     <group>Bibliothèque</group>
-    <group>Conseil</group>
     <group>Démonstration</group>
     <group>Développement</group>
     <group>Divertissement</group>
@@ -15,10 +16,13 @@
     <group>Enseignement</group>
     <group>Finances</group>
     <group>Information</group>
+    <group>Outils</group>
+    <group>Pilotage</group>
     <group>Recherche</group>
     <group>Services</group>
     <group>Tests</group>
     <group>Travail</group>
     <group>uPortal</group>
+    <group>conseil</group>
   </children>
 </group>

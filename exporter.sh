@@ -18,6 +18,7 @@
 # Add -Dtype=dataType To get a list of data keys for the type
 
 exporter(){
+  echo "========== EXPORT des objets de type $1"
     ant data-export -Dtype=$1 -Ddir=exports
 }
 

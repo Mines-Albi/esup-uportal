@@ -9,4 +9,16 @@
         <scope>PERSISTENT</scope>
         <description>Skin name</description>
     </stylesheet-parameter>
+    <stylesheet-parameter>
+        <name>subNavigationLinkAsAnchor</name>
+        <default-value>true</default-value>
+        <scope>PERSISTENT</scope>
+        <description>render subnavigation link as Anchor</description>
+    </stylesheet-parameter>
+    <stylesheet-parameter>
+        <name>targetChannelID</name>
+        <default-value>none</default-value>
+        <scope>REQUEST</scope>
+        <description>inform theme of the current targeted channel</description>
+    </stylesheet-parameter>
 </stylesheet-descriptor>

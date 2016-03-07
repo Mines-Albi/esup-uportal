@@ -5,22 +5,14 @@
     </folder>
     <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
     <folder ID="s5" hidden="false" immutable="false" name="Enseignement" type="regular" unremovable="false">
-      <folder ID="s6" hidden="false" immutable="false" name="Column 1" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>50%</value>
-        </structure-attribute>
-        <channel fname="announcements" unremovable="false" hidden="false" immutable="false" ID="n7"/>
-        <channel fname="courses" unremovable="false" hidden="false" immutable="false" ID="n8"/>
-      </folder>
-      <folder ID="s9" hidden="false" immutable="false" name="Column 2" type="regular" unremovable="false">
-        <structure-attribute>
-          <name>width</name>
-          <value>50%</value>
-        </structure-attribute>
-        <channel fname="notification" unremovable="false" hidden="false" immutable="false" ID="n10"/>
-        <channel fname="google-docs" unremovable="false" hidden="false" immutable="false" ID="n11"/>
-      </folder>
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Outils</value>
+      </structure-attribute>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n7"/>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n8"/>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n10"/>
+      <channel fname="google-docs" unremovable="false" hidden="false" immutable="false" ID="n11"/>
     </folder>
   </folder>
 </layout>

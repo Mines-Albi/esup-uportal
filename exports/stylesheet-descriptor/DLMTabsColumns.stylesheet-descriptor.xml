@@ -22,10 +22,23 @@
         <description>The number of the DLM tab that is currently active</description>
     </stylesheet-parameter>
     <stylesheet-parameter>
+        <name>targetChannelID</name>
+        <default-value>none</default-value>
+        <scope>REQUEST</scope>
+        <description>current target channel ID</description>
+    </stylesheet-parameter>
+    <stylesheet-parameter>
         <name>userLayoutRoot</name>
         <scope>REQUEST</scope>
         <description>The id of the focused layout element</description>
     </stylesheet-parameter>
+    <layout-attribute>
+        <name>canadianModeEmulation</name>
+        <default-value>false</default-value>
+        <scope>PERSISTENT</scope>
+        <description>enable/disable canadian mode per fragment layout</description>
+        <targetElement>folder</targetElement>
+    </layout-attribute>
     <layout-attribute>
         <name>externalId</name>
         <scope>PERSISTENT</scope>

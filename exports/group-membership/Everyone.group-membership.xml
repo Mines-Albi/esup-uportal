@@ -4,14 +4,13 @@
   <creator>system</creator>
   <description>Toutes les personnes</description>
   <children>
-    <group>Authenticated Users</group>
-    <group>PAGS Root</group>
     <group>Faculty</group>
     <group>Guests</group>
     <group>Portal System</group>
     <group>Staff</group>
     <group>Students</group>
-    <!-- Ajout des groupes SmartLdap -->
+    <group>Authenticated Users</group>
+    <group>PAGS Root</group>
     <group>SmartLdap ROOT</group>
   </children>
 </group>

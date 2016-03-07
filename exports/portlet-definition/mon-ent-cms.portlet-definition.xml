@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd">
+    <title>Mon ENT personnalisé</title>
+    <name>Personnalisation de votre ENT</name>
+    <fname>mon-ent-cms</fname>
+    <desc>Personnalisation de l'ENT</desc>
+    <type>CMS</type>
+    <timeout>10000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/SimpleContentPortlet</ns2:webAppName>
+        <ns2:portletName>cms</ns2:portletName>
+    </portlet-descriptor>
+    <category>Outils</category>
+    <group>Everyone</group>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>editable</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasAbout</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasHelp</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>iconUrl</name>
+        <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/mimetypes/text-html.png</value>
+    </parameter>
+    <portlet-preference>
+        <name>content</name>
+        <readOnly>false</readOnly>
+        <value>&lt;h2&gt;Comment personnaliser votre espace num&amp;eacute;rique de travail&lt;/h2&gt;
+
+
+&lt;p&gt;Les 6 premiers groupes d'onglets sont fixes pour tous.&lt;/p&gt;
+
+
+&lt;p&gt;Dans ce 7&amp;egrave;me groupe, vous pouvez ajouter des onglets, ajouter ou d&amp;eacute;placer des &amp;eacute;l&amp;eacute;ments dans les onglets existants.&lt;/p&gt;
+
+
+&lt;p&gt;Vous pouvez ainsi vous construire votre espace personnalis&amp;eacute;, en y organisant les &amp;eacute;l&amp;eacute;ments de contenu (dossiers, applications,...) que vous utilisez le plus souvent.&lt;/p&gt;
+
+
+</value>
+    </portlet-preference>
+</portlet-definition>
