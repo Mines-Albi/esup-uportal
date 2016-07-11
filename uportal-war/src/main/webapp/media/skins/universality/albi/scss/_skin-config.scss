@@ -53,11 +53,14 @@ $headerBackground				: $c1;
 $headerGradient1				: $c1light;
 $headerGradient2				: $c1dark;
 // Logo
-$portalLogoPadding				: 1.3em 25px;
+// albi $portalLogoPadding				: 1.3em 25px;
+$portalLogoPadding				: 0.2em 10px;
 $portalFocusedLogoPadding		: 1.5em 0;
 // Login (assumes CAS)
-$loginPositionTop				: 1.5em;
-$loginPositionRight				: 25px;
+// albi $loginPositionTop				: 1.5em;
+$loginPositionTop				: 0.5em;
+// albi $loginPositionRight				: 25px;
+$loginPositionRight				: 10px;
 $loginButtonWidth				: 10em;
 // User Welcome
 $headerWelcomeTop				: 3em;

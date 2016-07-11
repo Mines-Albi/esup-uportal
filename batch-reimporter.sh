@@ -9,11 +9,11 @@ reimporter_fichier(){
     ant data-import -Dfile=$1
 }
 
-reimporter_repertoire exports/portlet-definition
-# reimporter_repertoire exports/user
+reimporter_repertoire exports/user
+reimporter_repertoire exports/profile
 # reimporter_repertoire exports/pags-group
 # reimporter_repertoire exports/group-membership
-# reimporter_repertoire exports/profile
+# reimporter_repertoire exports/portlet-definition
 # reimporter_repertoire exports/fragment-definition
 # reimporter_repertoire exports/fragment-layout
 # reimporter_fichier exports/user/sosinfo-lo.user.xml

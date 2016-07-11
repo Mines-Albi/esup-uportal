@@ -10,6 +10,7 @@
         <value>Accueil</value>
       </structure-attribute>
       <channel fname="AnnouncementsDisplay" unremovable="false" hidden="false" immutable="false" ID="n1001"/>
+      <channel fname="Announcements" unremovable="false" hidden="false" immutable="false" ID="n1002"/>
     </folder>
     <folder ID="s20" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Agenda Mines-Albi" type="regular" unremovable="false">
       <structure-attribute>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="permanents-lo">
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="permanents-lo">
   <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
     <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
       <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
@@ -68,7 +69,7 @@
         <name>tabGroup</name>
         <value>3-Opérationnel</value>
       </structure-attribute>
-      <channel fname="doc-portail" unremovable="false" hidden="false" immutable="false" ID="n311"/>
+      <channel fname="cms-doc" unremovable="false" hidden="false" immutable="false" ID="n311"/>
     </folder>
     <folder ID="s32" hidden="false" immutable="false" name="Elèves" type="regular" unremovable="false">
       <structure-attribute>
@@ -87,14 +88,7 @@
       <channel fname="ade-planif" unremovable="false" hidden="false" immutable="false" ID="n3302"/>
       <channel fname="guide-referents" unremovable="false" hidden="false" immutable="false" ID="n3303"/>
       <channel fname="campus" unremovable="false" hidden="false" immutable="false" ID="n3304"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3305"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3306"/>
       <channel fname="ged-de" unremovable="false" hidden="false" immutable="false" ID="n3307"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3308"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3309"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3310"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3311"/>
-      <channel fname="appli-a-faire" unremovable="false" hidden="false" immutable="false" ID="n3312"/>
     </folder>
     <folder ID="s34" hidden="false" immutable="false" name="DR" type="regular" unremovable="false">
       <structure-attribute>
