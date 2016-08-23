@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="permanents-lo">
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="permanents-lo">
   <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
     <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
       <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
@@ -8,21 +7,21 @@
     <folder ID="s21" hidden="false" immutable="false" name="Tutelle" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-tutelle" unremovable="false" hidden="false" immutable="false" ID="n211"/>
     </folder>
     <folder ID="s22" hidden="false" immutable="false" name="IMT" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="imt-mintel" unremovable="false" hidden="false" immutable="false" ID="n221"/>
     </folder>
     <folder ID="s23" hidden="false" immutable="false" name="Qualité" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-qualite" unremovable="false" hidden="false" immutable="false" ID="n231"/>
       <channel fname="notes-organisation" unremovable="false" hidden="false" immutable="false" ID="n232"/>
@@ -30,7 +29,7 @@
     <folder ID="s24" hidden="false" immutable="false" name="Indicateurs" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-indicateurs" unremovable="false" hidden="false" immutable="false" ID="n241"/>
       <channel fname="ged-budget" unremovable="false" hidden="false" immutable="false" ID="n242"/>
@@ -38,21 +37,21 @@
     <folder ID="s25" hidden="false" immutable="false" name="Inst.Statut." type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-instances-statutaires" unremovable="false" hidden="false" immutable="false" ID="n251"/>
     </folder>
     <folder ID="s26" hidden="false" immutable="false" name="Autres Instances" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-instances-autres" unremovable="false" hidden="false" immutable="false" ID="n261"/>
     </folder>
     <folder ID="s27" hidden="false" immutable="false" name="Partenaires" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-partenaires" unremovable="false" hidden="false" immutable="false" ID="n271"/>
       <channel fname="grpe" unremovable="false" hidden="false" immutable="false" ID="n272"/>
@@ -60,21 +59,21 @@
     <folder ID="s28" hidden="false" immutable="false" name="Lien social" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>2-Pilotage</value>
+        <value>Pilotage Mines Albi</value>
       </structure-attribute>
       <channel fname="ged-lien-social" unremovable="false" hidden="false" immutable="false" ID="n281"/>
     </folder>
     <folder ID="s31" hidden="false" immutable="false" name="Centre Doc." type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
-      <channel fname="cms-doc" unremovable="false" hidden="false" immutable="false" ID="n311"/>
+   <channel fname="doc-portail" unremovable="false" hidden="false" immutable="false" ID="n2221"/>
     </folder>
     <folder ID="s32" hidden="false" immutable="false" name="Elèves" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="ged-eleves" unremovable="false" hidden="false" immutable="false" ID="n321"/>
       <channel fname="bde-portail" unremovable="false" hidden="false" immutable="false" ID="n322"/>
@@ -82,7 +81,7 @@
     <folder ID="s33" hidden="false" immutable="false" name="DE" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="ade-direct" unremovable="false" hidden="false" immutable="false" ID="n3301"/>
       <channel fname="ade-planif" unremovable="false" hidden="false" immutable="false" ID="n3302"/>
@@ -93,14 +92,14 @@
     <folder ID="s34" hidden="false" immutable="false" name="DR" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="ged-dr" unremovable="false" hidden="false" immutable="false" ID="n3401"/>
     </folder>
     <folder ID="s35" hidden="false" immutable="false" name="GIND" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="www-gind" unremovable="false" hidden="false" immutable="false" ID="n3501"/>
       <channel fname="ged-gind" unremovable="false" hidden="false" immutable="false" ID="n3502"/>
@@ -109,7 +108,7 @@
     <folder ID="s36" hidden="false" immutable="false" name="ICAA" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="www-ica" unremovable="false" hidden="false" immutable="false" ID="n3601"/>
       <channel fname="ged-icaa" unremovable="false" hidden="false" immutable="false" ID="n3602"/>
@@ -118,7 +117,7 @@
     <folder ID="s37" hidden="false" immutable="false" name="ICAA" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>3-Opérationnel</value>
+        <value>Nous, Acteurs</value>
       </structure-attribute>
       <channel fname="www-rapsodee" unremovable="false" hidden="false" immutable="false" ID="n3701"/>
       <channel fname="ged-rapsodee" unremovable="false" hidden="false" immutable="false" ID="n3702"/>
@@ -128,7 +127,7 @@
     <folder ID="s41" hidden="false" immutable="false" name="Recrutement" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>4-Ambassadeurs</value>
+        <value>Nous, Ambassadeurs</value>
       </structure-attribute>
       <channel fname="ged-concours-g4" unremovable="false" hidden="false" immutable="false" ID="n411"/>
       <channel fname="ged-concours-mines-telecom" unremovable="false" hidden="false" immutable="false" ID="n412"/>
@@ -141,7 +140,7 @@
     <folder ID="s42" hidden="false" immutable="false" name="Stages-Carrières" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>4-Ambassadeurs</value>
+        <value>Nous, Ambassadeurs</value>
       </structure-attribute>
       <channel fname="appli-stages" unremovable="false" hidden="false" immutable="false" ID="n421"/>
       <channel fname="campus-stages" unremovable="false" hidden="false" immutable="false" ID="n422"/>
@@ -152,7 +151,7 @@
     <folder ID="s43" hidden="false" immutable="false" name="Alumni" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>4-Ambassadeurs</value>
+        <value>Nous, Ambassadeurs</value>
       </structure-attribute>
       <channel fname="www-alumni" unremovable="false" hidden="false" immutable="false" ID="n431"/>
       <channel fname="linkedin" unremovable="false" hidden="false" immutable="false" ID="n432"/>
@@ -162,7 +161,7 @@
     <folder ID="s44" hidden="false" immutable="false" name="International" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>4-Ambassadeurs</value>
+        <value>Nous, Ambassadeurs</value>
       </structure-attribute>
       <channel fname="ged-univ-partenaires" unremovable="false" hidden="false" immutable="false" ID="n441"/>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n442"/>
@@ -171,14 +170,14 @@
     <folder ID="s45" hidden="false" immutable="false" name="Communiquer" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>4-Ambassadeurs</value>
+        <value>Nous, Ambassadeurs</value>
       </structure-attribute>
       <channel fname="ged-espace-communication" unremovable="false" hidden="false" immutable="false" ID="n451"/>
     </folder>
     <folder ID="s51" hidden="false" immutable="false" name="Nouvel arrivant" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="outils-cms" unremovable="false" hidden="false" immutable="false" ID="n511"/>
       <folder ID="s512" hidden="false" immutable="false" name="Column 1" type="regular" unremovable="false">
@@ -199,112 +198,70 @@
     <folder ID="s52" hidden="false" immutable="false" name="Annuaires" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n521"/>
     </folder>
     <folder ID="s53" hidden="false" immutable="false" name="Centre Doc." type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n531"/>
     </folder>
     <folder ID="s54" hidden="false" immutable="false" name="SOS Info" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n541"/>
     </folder>
     <folder ID="s55" hidden="false" immutable="false" name="Locaux" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n551"/>
     </folder>
     <folder ID="s56" hidden="false" immutable="false" name="Missions" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n561"/>
     </folder>
     <folder ID="s57" hidden="false" immutable="false" name="Achats" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>5-Outils</value>
+        <value>Nos Outils</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n571"/>
-    </folder>
-    <folder ID="s58" hidden="false" immutable="false" name="Restauration" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>5-Outils</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n581"/>
-    </folder>
-    <folder ID="s61" hidden="false" immutable="false" name="Mon dossier élève" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>6-Mon dossier</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n611"/>
-    </folder>
-    <folder ID="s62" hidden="false" immutable="false" name="Mon dossier élève alternant" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>6-Mon dossier</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n621"/>
-    </folder>
-    <folder ID="s63" hidden="false" immutable="false" name="Mon dossier alumni" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>6-Mon dossier</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n631"/>
     </folder>
     <folder ID="s64" hidden="false" immutable="false" name="Mon dossier personnel école" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>6-Mon dossier</value>
+        <value>Mon dossier</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n641"/>
-    </folder>
-    <folder ID="s65" hidden="false" immutable="false" name="Mon dossier doctorant" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>6-Mon dossier</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n651"/>
-    </folder>
-    <folder ID="s66" hidden="false" immutable="false" name="Mon dossier vacataire" type="regular" unremovable="false">
-      <structure-attribute>
-        <name>tabGroup</name>
-        <value>6-Mon dossier</value>
-      </structure-attribute>
-      <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n661"/>
     </folder>
     <folder ID="s67" hidden="false" immutable="false" name="Mes réferés/tutorés" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>6-Mon dossier</value>
+        <value>Mon dossier</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n671"/>
     </folder>
     <folder ID="s68" hidden="false" immutable="false" name="Mes cours" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>6-Mon dossier</value>
+        <value>Mon dossier</value>
       </structure-attribute>
       <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n681"/>
     </folder>
     <folder ID="s71" hidden="false" immutable="false" name="Mon Onglet personnalisé" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
-        <value>7-Mon ENT</value>
+        <value>Mon ENT</value>
       </structure-attribute>
       <channel fname="mon-ent-cms" unremovable="false" hidden="false" immutable="false" ID="n711"/>
     </folder>

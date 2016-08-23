@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="welcome-lo">
+  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+    </folder>
+    <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+    <folder ID="s10" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Actualités/Annonces" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+      <channel fname="AnnouncementsDisplay" unremovable="false" hidden="false" immutable="false" ID="n1001"/>
+    </folder>
+    <folder ID="s20" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Agenda Mines-Albi" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+      <folder ID="s201" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+        <channel fname="image-agenda" unremovable="false" hidden="false" immutable="false" ID="n2011"/>
+      </folder>
+      <folder ID="s202" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+        <channel fname="calendar" unremovable="false" hidden="false" immutable="false" ID="n2021"/>
+      </folder>
+    </folder>
+    <folder ID="s30" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="EDT" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+      <channel fname="ade-2colonnes" unremovable="false" hidden="false" immutable="false" ID="n3001"/>
+    </folder>
+    <folder ID="s40" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Webmail" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+      <channel fname="webmail" unremovable="false" hidden="false" immutable="false" ID="n4001"/>
+    </folder>
+    <folder ID="s50" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Aide portail" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+      <channel fname="albi-aide" unremovable="false" hidden="false" immutable="false" ID="n5001"/>
+    </folder>
+    <folder ID="s60" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Mes projets" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Accueil</value>
+      </structure-attribute>
+    </folder>
+  </folder>
+</layout>

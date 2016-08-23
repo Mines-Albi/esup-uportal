@@ -16,13 +16,13 @@
     <description>Parent package for portlets deployed with uPortal.</description>
 
     <modules>
-        <module>AnnouncementsPortlet</module>
         <module>BookmarksPortlet</module>
         <module>CalendarPortlet</module>
         <module>cas</module>
         <module>cas-proxy-test-portlet</module>
         <module>email-preview</module>
         <module>FunctionalTestsPortlet</module>
+	<!--<module>esup-filemanager</module>-->
         <module>jasig-widget-portlets</module>
         <module>pluto-testsuite</module>
         <module>NewsReaderPortlet</module>

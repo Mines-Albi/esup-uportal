@@ -31,12 +31,9 @@ case $# in
             exporter fragment-layout
             exporter group-membership
             exporter layout
-            exporter permission-owner
-            exporter permission-set
             exporter portlet-definition
             exporter 'portlet-type'
             exporter profile
-            exporter stylesheet-descriptor
             exporter subscribed-fragments
             exporter user
             ;;
@@ -44,7 +41,7 @@ case $# in
             ;;
        esac
        ;;
-    *) echo "Usage : $0 type, où type est dans { entity-type, event-aggregation, fragment-definition, fragment-layout, group-membership, layout, permission-owner, permission-set, portlet-definition, portlet-type, profile, stylesheet-descriptor, subscribed-fragments, user }"
+    *) echo "Usage : $0 type, où type est dans { entity-type, event-aggregation, fragment-definition, fragment-layout, group-membership, layout, portlet-definition, portlet-type, profile, subscribed-fragments, user }"
         ;;
 
 esac

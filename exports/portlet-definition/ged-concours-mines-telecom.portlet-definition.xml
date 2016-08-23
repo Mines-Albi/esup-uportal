@@ -69,7 +69,7 @@
     <portlet-preference>
         <name>url</name>
         <readOnly>false</readOnly>
-        <value>https://frontal-cps-pp.mines-albi.fr/sections/direction_des_etudes</value>
+        <value>https://frontal-cps-pp.mines-albi.fr/section/direction_des_etudes</value>
     </portlet-preference>
     <portlet-preference>
         <name>width</name>

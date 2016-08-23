@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="baillon">
+  <folder hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder hidden="false" immutable="true" name="Header folder" type="header" unremovable="true"/>
+    <folder hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+    <folder hidden="false" immutable="false" name="Mon onglet" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Outils</value>
+      </structure-attribute>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+      <folder hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+      </folder>
+    </folder>
+  </folder>
+  <dlm:deleteSet hidden="false" immutable="false" name="" type="dlm:deleteSet" unremovable="false">
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[5]/channel" type="dlm:delete" unremovable="false" fname="ged-qualite"/>
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[6]/channel" type="dlm:delete" unremovable="false" fname="ged-indicateurs"/>
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[6]/channel[2]" type="dlm:delete" unremovable="false" fname="ged-budget"/>
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[13]/channel" type="dlm:delete" unremovable="false" fname="ade-direct"/>
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[13]/channel[2]" type="dlm:delete" unremovable="false" fname="ade-planif"/>
+    <dlm:delete hidden="false" immutable="false" name="permanents-lo:/layout/folder/folder[13]/channel[3]" type="dlm:delete" unremovable="false" fname="guide-referents"/>
+  </dlm:deleteSet>
+</layout>

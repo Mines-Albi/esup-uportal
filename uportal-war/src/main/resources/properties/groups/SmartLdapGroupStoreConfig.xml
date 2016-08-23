@@ -82,7 +82,7 @@
      | EMAC - les groupes sont des objets emacGroup !
      +-->
     <bean id="filter" class="java.lang.String">
-        <constructor-arg><value>(objectClass=emacGroup)</value></constructor-arg>
+        <constructor-arg><value>(objectClass=entGroup)</value></constructor-arg>
     </bean>
 
     <!--

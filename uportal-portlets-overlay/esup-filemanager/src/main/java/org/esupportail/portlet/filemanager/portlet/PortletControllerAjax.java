@@ -348,7 +348,9 @@ public class PortletControllerAjax {
 		this.serverAccess.updateUserParameters(dir, userParameters);
 		DownloadFile file = this.serverAccess.getFile(dir, userParameters);
 		response.setContentType(file.getContentType());
-		response.setContentLength(file.getSize());
+		if(file.getSize() > 0) {
+			response.setContentLength((int)file.getSize());
+		}
 		FileCopyUtils.copy(file.getInputStream(), response.getPortletOutputStream());
 	}
 	
@@ -360,7 +362,9 @@ public class PortletControllerAjax {
 		DownloadFile file = this.serverAccess.getFile(dir, userParameters);
 		final String contentType = "audio/mpeg3";
 		response.setContentType(contentType);
-		response.setContentLength(file.getSize());
+		if(file.getSize() > 0) {
+			response.setContentLength((int)file.getSize());
+		}
 		FileCopyUtils.copy(file.getInputStream(), response.getPortletOutputStream());
 	}
 	
@@ -374,7 +378,9 @@ public class PortletControllerAjax {
 		this.serverAccess.updateUserParameters(dir, userParameters);
 		DownloadFile file = this.serverAccess.getFile(dir, userParameters);
 		response.setContentType(file.getContentType());
-	    response.setContentLength(file.getSize());
+		if(file.getSize() > 0) {
+			response.setContentLength((int)file.getSize());
+		}
 		response.setProperty("Content-Disposition","attachment; filename=\"" + file.getBaseName() +"\"");
 		FileCopyUtils.copy(file.getInputStream(), response.getPortletOutputStream());
 	}
@@ -387,12 +393,9 @@ public class PortletControllerAjax {
     								ResourceRequest request, ResourceResponse response) throws IOException {
 		List<String> dirs = pathEncodingUtils.decodeDirs(command.getDirs());
 		this.serverAccess.updateUserParameters(dirs.get(0), userParameters);
-		DownloadFile file = this.serverAccess.getZip(dirs, userParameters);
-		response.setContentType(file.getContentType());
-		response.setContentLength(file.getSize());
-		//response.setCharacterEncoding("utf-8");
-		response.setProperty("Content-Disposition","attachment; filename=\"" + file.getBaseName() +"\"");
-		FileCopyUtils.copy(file.getInputStream(), response.getPortletOutputStream());
+		response.setContentType("application/zip");
+		response.setProperty("Content-Disposition","attachment; filename=\"export.zip\"");
+		this.serverAccess.writeZip(response.getPortletOutputStream(), dirs, userParameters);
 	}
 	
 

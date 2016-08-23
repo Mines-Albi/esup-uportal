@@ -2,7 +2,7 @@
   <dlm:fragment xmlns:dlm="http://org.jasig.portal.layout.dlm.config" name="sosinfo" ownerID="sosinfo-lo" precedence="40.0">
     <dlm:audience evaluatorFactory="org.jasig.portal.layout.dlm.providers.GroupMembershipEvaluatorFactory">
       <paren mode="OR">
-        <attribute mode="deepMemberOf" name="sosinfo"/>
+        <attribute mode="deepMemberOf" name="sgdi"/>
       </paren>
     </dlm:audience>
   </dlm:fragment>

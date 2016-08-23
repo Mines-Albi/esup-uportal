@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="academics-lo">
+  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+    </folder>
+    <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+    <folder ID="s5" hidden="false" immutable="false" name="Enseignement" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Outils</value>
+      </structure-attribute>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n7"/>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n8"/>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n10"/>
+      <channel fname="google-docs" unremovable="false" hidden="false" immutable="false" ID="n11"/>
+    </folder>
+  </folder>
+</layout>

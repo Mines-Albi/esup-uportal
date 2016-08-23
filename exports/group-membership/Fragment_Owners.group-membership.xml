@@ -10,6 +10,11 @@
     <literal>all-lo</literal>
     <literal>campus-lo</literal>
     <literal>developer-lo</literal>
+    <literal>doctorant-lo</literal>
+    <literal>eleves-ifia-lo</literal>
+    <literal>eleves-ifie-lo</literal>
+    <literal>eleves-lo</literal>
+    <literal>eleves-masters-lo</literal>
     <literal>faculty-lo</literal>
     <literal>fragmentTemplate</literal>
     <literal>guest-lo</literal>

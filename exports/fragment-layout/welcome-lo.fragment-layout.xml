@@ -4,14 +4,20 @@
       <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
     </folder>
     <folder ID="s4" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
-    <folder ID="s10" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Actualités/Annonces" type="regular" unremovable="false">
+    <folder ID="s120" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Actualuté / Annonces" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
         <value>Accueil</value>
       </structure-attribute>
-      <channel fname="AnnouncementsDisplay" unremovable="false" hidden="false" immutable="false" ID="n1001"/>
-      <channel fname="Announcements" unremovable="false" hidden="false" immutable="false" ID="n1002"/>
+      <folder ID="s1201" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
+        <structure-attribute>
+          <name>width</name>
+          <value>50%</value>
+        </structure-attribute>
+        <channel fname="AnnouncementsDisplay" unremovable="false" hidden="false" immutable="false" ID="n1011"/>
+      </folder>
     </folder>
+
     <folder ID="s20" dlm:deleteAllowed="false" dlm:editAllowed="false" dlm:moveAllowed="false" hidden="false" immutable="false" name="Agenda Mines-Albi" type="regular" unremovable="false">
       <structure-attribute>
         <name>tabGroup</name>
@@ -24,6 +30,7 @@
         </structure-attribute>
         <channel fname="image-agenda" unremovable="false" hidden="false" immutable="false" ID="n2011"/>
       </folder>
+
       <folder ID="s202" hidden="false" immutable="false" name="Column" type="regular" unremovable="false">
         <structure-attribute>
           <name>width</name>

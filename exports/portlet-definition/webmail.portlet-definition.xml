@@ -12,6 +12,7 @@
     </portlet-descriptor>
     <category>Outils</category>
     <group>Authenticated Users</group>
+    <group>Everyone</group>
     <parameter>
         <name>alternate</name>
         <value>false</value>

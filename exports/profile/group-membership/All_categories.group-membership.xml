@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><group script="classpath://org/jasig/portal/io/import-group_membership_v3-2.crn">
+  <name>All categories</name>
+  <entity-type>org.jasig.portal.portlet.om.IPortletDefinition</entity-type>
+  <creator>system</creator>
+  <description>Toutes les catégories de portlets</description>
+  <children>
+    <group>Acteurs</group>
+    <group>Actualités</group>
+    <group>Administration</group>
+    <group>Ambassadeurs</group>
+    <group>Bibliothèque</group>
+    <group>Démonstration</group>
+    <group>Développement</group>
+    <group>Divertissement</group>
+    <group>Enseignants</group>
+    <group>Enseignement</group>
+    <group>Finances</group>
+    <group>Information</group>
+    <group>Outils</group>
+    <group>Pilotage</group>
+    <group>Recherche</group>
+    <group>Services</group>
+    <group>Tests</group>
+    <group>Travail</group>
+    <group>uPortal</group>
+    <group>conseil</group>
+  </children>
+</group>

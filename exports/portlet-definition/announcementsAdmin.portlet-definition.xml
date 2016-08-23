@@ -11,6 +11,7 @@
         <ns2:portletName>AnnouncementsAdmin</ns2:portletName>
     </portlet-descriptor>
     <category>Administration</category>
+    <group>Everyone</group>
     <group>Portal System</group>
     <parameter>
         <name>alternate</name>

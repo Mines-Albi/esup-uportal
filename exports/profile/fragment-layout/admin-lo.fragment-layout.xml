@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><layout xmlns:dlm="http://www.uportal.org/layout/dlm" script="classpath://org/jasig/portal/io/import-layout_v3-2.crn" username="admin-lo">
+  <folder ID="s1" hidden="false" immutable="false" name="Root folder" type="root" unremovable="true">
+    <folder ID="s2" hidden="true" immutable="true" name="Header folder" type="header" unremovable="true">
+      <channel fname="fragment-admin-exit" unremovable="false" hidden="false" immutable="false" ID="n3"/>
+    </folder>
+    <folder ID="s6" hidden="false" immutable="false" name="Footer folder" type="footer" unremovable="false"/>
+    <folder ID="s20" hidden="false" immutable="false" name="Outils d'administration" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Administration Portail</value>
+      </structure-attribute>
+      <channel fname="portal-administration" unremovable="false" hidden="false" immutable="false" ID="n21"/>
+    </folder>
+    <folder ID="s30" hidden="false" immutable="false" name="Gestion annonces" type="regular" unremovable="false">
+      <structure-attribute>
+        <name>tabGroup</name>
+        <value>Administration Portail</value>
+      </structure-attribute>
+      <channel fname="DLMStaticMissingChannel" unremovable="false" hidden="false" immutable="false" ID="n31"/>
+      <channel fname="emergency-alert-admin" unremovable="false" hidden="false" immutable="false" ID="n32"/>
+      <channel fname="please-register" unremovable="false" hidden="false" immutable="false" ID="n33"/>
+    </folder>
+  </folder>
+</layout>
