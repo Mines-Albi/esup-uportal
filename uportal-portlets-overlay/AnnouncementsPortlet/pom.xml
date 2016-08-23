@@ -70,10 +70,10 @@
                     </dependentWarExcludes>
                 </configuration>
             </plugin>
-           <plugin>
+           <!--<plugin>
                 <groupId>org.apache.portals.pluto</groupId>
                 <artifactId>maven-pluto-plugin</artifactId>
-           </plugin>
+           </plugin>-->
             <plugin>
                 <!--
                  | Invoke this plugin as follows to drop and recreate the Announcements database tables...
